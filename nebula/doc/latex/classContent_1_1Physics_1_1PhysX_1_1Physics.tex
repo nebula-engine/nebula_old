@@ -1,0 +1,141 @@
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics}{
+\section{Content::Physics::PhysX::Physics Class Reference}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics}\index{Content::Physics::PhysX::Physics@{Content::Physics::PhysX::Physics}}
+}
+
+
+Physx Implementation  
+
+
+{\ttfamily \#include $<$CO\_\-PH\_\-PX\_\-Physics.h$>$}Inheritance diagram for Content::Physics::PhysX::Physics::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classContent_1_1Physics_1_1PhysX_1_1Physics}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a98804f05a106071d267da07611c6f229}{
+\hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a98804f05a106071d267da07611c6f229}{Physics} ()}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a98804f05a106071d267da07611c6f229}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_aa2e0b97c8ed4e57bc77b30f5a8075d16}{
+\hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_aa2e0b97c8ed4e57bc77b30f5a8075d16}{$\sim$Physics} ()}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_aa2e0b97c8ed4e57bc77b30f5a8075d16}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_ac7d7321af7add7b972a9939d17816987}{
+void \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_ac7d7321af7add7b972a9939d17816987}{VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_ac7d7321af7add7b972a9939d17816987}
+
+\begin{DoxyCompactList}\small\item\em initialize \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a3eeda900a056a316b662e29cc2ac225c}{
+void \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a3eeda900a056a316b662e29cc2ac225c}{VShutDown} ()}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a3eeda900a056a316b662e29cc2ac225c}
+
+\begin{DoxyCompactList}\small\item\em shutdown \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Register Objects}\par
+{\em \label{_amgrp6a304d42496b952c380b92415f075c10}
+ CO\_\-SC\_\-AD\_\-Scene }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_aa78fa950075406f99d68fca7a1ee9418}{
+void {\bfseries RegisterScene} (\hyperlink{classContent_1_1CO__SC__AD__Scene}{CO\_\-SC\_\-AD\_\-Scene} $\ast$scene)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_aa78fa950075406f99d68fca7a1ee9418}
+
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a623b34295e885992ac9857ea194315ac}{
+void \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a623b34295e885992ac9857ea194315ac}{RegisterRigidDynamic} (::\hyperlink{classContent_1_1Actor_1_1Admin_1_1RigidDynamic}{CO\_\-AC\_\-AD\_\-RigidDynamic} $\ast$rigidDynamic)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a623b34295e885992ac9857ea194315ac}
+
+\begin{DoxyCompactList}\small\item\em RigidDynamic \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a1cec453a952f39bf5378077976b5b7ec}{
+void \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a1cec453a952f39bf5378077976b5b7ec}{RegisterController} (::\hyperlink{classContent_1_1Actor_1_1Admin_1_1Controller}{CO\_\-AC\_\-AD\_\-Controller} $\ast$\&controller, \hyperlink{classContent_1_1CO__SC__AD__Scene}{CO\_\-SC\_\-AD\_\-Scene} $\ast$scene)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a1cec453a952f39bf5378077976b5b7ec}
+
+\begin{DoxyCompactList}\small\item\em Controller \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf fetch objects}\par
+{\em \label{_amgrpb712734d7b6a37d417e36727149b52a3}
+ physx physics }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a8b14817cfe6829494e00c7e8e942ec4a}{
+physx::PxPhysics $\ast$ {\bfseries GetPxPhysics} () const }
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a8b14817cfe6829494e00c7e8e942ec4a}
+
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_acdcf6d401b5a223f0bc8c4bc210c13d3}{
+physx::PxControllerManager $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_acdcf6d401b5a223f0bc8c4bc210c13d3}{GetPxControllerManager} () const }
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_acdcf6d401b5a223f0bc8c4bc210c13d3}
+
+\begin{DoxyCompactList}\small\item\em physx controller manager \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_adc7427b3402229c8ff6ca4c26a937a3f}{
+static physx::PxTransform {\bfseries TransformToPxTransform} (Math::Transformf \&trans)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_adc7427b3402229c8ff6ca4c26a937a3f}
+
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a0e36fa04152faed01f97cfc25a1640f9}{
+static Math::Transformf {\bfseries PxTransformToTransform} (physx::PxTransform \&trans)}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a0e36fa04152faed01f97cfc25a1640f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{Indent}{\bf PhysX Objects}\par
+{\em \label{_amgrp5dcec0622931609ebc9147725ef87cd9}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_afdcfc0be36d259db67361f3a1067b1af}{
+\hyperlink{classDefaultErrorCallback}{DefaultErrorCallback} \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_afdcfc0be36d259db67361f3a1067b1af}{m\_\-defaultErrorCallback}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_afdcfc0be36d259db67361f3a1067b1af}
+
+\begin{DoxyCompactList}\small\item\em physx default error callback \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_aa21a34097ed6340119f852fae145bd2e}{
+physx::PxDefaultAllocator \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_aa21a34097ed6340119f852fae145bd2e}{m\_\-defaultAllocatorCallback}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_aa21a34097ed6340119f852fae145bd2e}
+
+\begin{DoxyCompactList}\small\item\em physx default allocator \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a86f47c7377c48ee1852010fb38479577}{
+physx::PxFoundation $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a86f47c7377c48ee1852010fb38479577}{m\_\-foundation}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a86f47c7377c48ee1852010fb38479577}
+
+\begin{DoxyCompactList}\small\item\em physx foundation \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a6424931f236d9a7633bf8ca9c39f2a17}{
+physx::PxPhysics $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a6424931f236d9a7633bf8ca9c39f2a17}{m\_\-physics}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a6424931f236d9a7633bf8ca9c39f2a17}
+
+\begin{DoxyCompactList}\small\item\em physx physics \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_aa8c01e1b0f921ed2a423894774f53ead}{
+physx::PxProfileZoneManager $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_aa8c01e1b0f921ed2a423894774f53ead}{m\_\-profileZoneManager}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_aa8c01e1b0f921ed2a423894774f53ead}
+
+\begin{DoxyCompactList}\small\item\em physx profile zone manager \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_ad41972735a4e56def8293e84d08bcfc3}{
+physx::PxCooking $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_ad41972735a4e56def8293e84d08bcfc3}{m\_\-cooking}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_ad41972735a4e56def8293e84d08bcfc3}
+
+\begin{DoxyCompactList}\small\item\em physx cooking \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_a01a2e503d7fadbc1e5f50543681fb9fa}{
+physx::pxtask::CudaContextManager $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_a01a2e503d7fadbc1e5f50543681fb9fa}{m\_\-cudaContextManager}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_a01a2e503d7fadbc1e5f50543681fb9fa}
+
+\begin{DoxyCompactList}\small\item\em physx cuda context manager \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Physics_1_1PhysX_1_1Physics_ae0c9fbf94995a23c5934b2e96ef316d9}{
+physx::PxControllerManager $\ast$ \hyperlink{classContent_1_1Physics_1_1PhysX_1_1Physics_ae0c9fbf94995a23c5934b2e96ef316d9}{m\_\-characterControllerManager}}
+\label{classContent_1_1Physics_1_1PhysX_1_1Physics_ae0c9fbf94995a23c5934b2e96ef316d9}
+
+\begin{DoxyCompactList}\small\item\em physx controller manager \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Physx Implementation 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Content/Physics/PhysX/CO\_\-PH\_\-PX\_\-Physics.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Content/Physics/PhysX/CO\_\-PH\_\-PX\_\-Physics.cpp\end{DoxyCompactItemize}

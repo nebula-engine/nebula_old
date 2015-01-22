@@ -1,0 +1,127 @@
+\hypertarget{main_intro}{}\section{Introduction}\label{main_intro}
+\hypertarget{main_proj}{}\subsection{The Project}\label{main_proj}
+Nebula is a 3D game engine written in c++. The goal of the project is a develop a versatile and cross-\/platform SDK. The SDK is first being developed for Windows and Linux systems with OpenGL for 3D rendering. PhysX by NVidia is used for physics. The goal for future versions is to support additional platforms such as XBOX, PS3, and Android as well as other rendering API's.\hypertarget{main_author}{}\subsection{The Author}\label{main_author}
+The sole author is Charles Rymal.\hypertarget{main_TODO}{}\subsection{TODO}\label{main_TODO}
+
+\begin{DoxyItemize}
+\item Get Windows window and rendering working
+\item Create animation hierarchy system
+\item Create rendering system with arbitarary meshes for any item, texture, lights, etc.
+\item Download and learn 3D model editor/ texture editor
+\item Create random maze generator at high level
+\item Change all float and float-\/dependent to typedef that can be switched easily from float to double
+\item Create Event communication system
+\item Create Networking
+\item Create Wheeled Vehicles
+\item Create Aircraft
+\item Create watercraft
+\item Create Maze Game
+\item Create game logic tools
+\item Create scripting
+\item Create console
+\begin{DoxyItemize}
+\item Create text rendering
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{main_mainloop}{}\section{Main Loop}\label{main_mainloop}
+
+\begin{DoxyItemize}
+\item Sequential
+\begin{DoxyItemize}
+\item Modules are updated sequentially each execution of the loop
+\end{DoxyItemize}
+\item Multithreaded
+\begin{DoxyItemize}
+\item There is no loop
+\item Modules are updated simulataneously on multiple threads with appropriate sync points and resource managament
+\item Threads are released upon application launch and each use their own loop to handle changing conditions and perform repetative tasks
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{main_outline}{}\section{Outline}\label{main_outline}
+
+\begin{DoxyItemize}
+\item Main Loop
+\begin{DoxyItemize}
+\item Sequential
+\item Multithreaded
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Physics
+\begin{DoxyItemize}
+\item Physx
+\begin{DoxyItemize}
+\item particle
+\item cloth
+\end{DoxyItemize}
+\item APEX
+\begin{DoxyItemize}
+\item destruction
+\item turbulence
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Animation
+\begin{DoxyItemize}
+\item Top level information about an animation or animation object.
+\item Must potentially work with Actor, Physics, Render,...
+\end{DoxyItemize}
+\item Audio
+\item Cinematics
+\item Render
+\begin{DoxyItemize}
+\item HUD
+\item Lighting
+\end{DoxyItemize}
+\item Level
+\item Actor
+\item AI
+\item Networking
+\item Scripting
+\begin{DoxyItemize}
+\item Defined in context of other systems such as AI, Level, Render,...
+\end{DoxyItemize}
+\item Tools
+\begin{DoxyItemize}
+\item Model Editor
+\begin{DoxyItemize}
+\item external tool for creation of characters, weapons, vehciles, etc.
+\item 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item Level Editor
+\begin{DoxyItemize}
+\item terrain (realistic shape and texture)
+\item terrain algorithm editor
+\item events
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Views
+\begin{DoxyItemize}
+\item Relative to various axes
+\begin{DoxyItemize}
+\item Actor
+\item Actor shape
+\item CO\_\-SC\_\-AD\_\-Scene
+\end{DoxyItemize}
+\item View behavior
+\begin{DoxyItemize}
+\item orientation
+\item translation
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Memory Zones
+\begin{DoxyItemize}
+\item physics data
+\item render data
+\item content data
+\item abstract data not used directly by physics or render
+\begin{DoxyItemize}
+\item example
+\begin{DoxyItemize}
+\item health
+\item objectives 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

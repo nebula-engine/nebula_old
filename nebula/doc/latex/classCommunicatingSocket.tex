@@ -1,0 +1,111 @@
+\hypertarget{classCommunicatingSocket}{
+\section{CommunicatingSocket Class Reference}
+\label{classCommunicatingSocket}\index{CommunicatingSocket@{CommunicatingSocket}}
+}
+
+
+\hyperlink{classSocket}{Socket} which is able to connect, send, and receive.  
+
+
+{\ttfamily \#include $<$CommunicatingSocket.h$>$}Inheritance diagram for CommunicatingSocket::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classCommunicatingSocket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{connect} (const string \&foreignAddress, unsigned short foreignPort)  throw (SocketException)
+\item 
+void \hyperlink{classCommunicatingSocket_aca4e86085c064641e86ae24ea29bbb94}{send} (const void $\ast$buffer, int bufferLen)  throw (SocketException)
+\item 
+int \hyperlink{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}{recv} (void $\ast$buffer, int bufferLen)  throw (SocketException)
+\item 
+string \hyperlink{classCommunicatingSocket_a13f9eca30ef56836cf23c163c848c09e}{getForeignAddress} ()  throw (SocketException)
+\item 
+unsigned short \hyperlink{classCommunicatingSocket_a184fbb4775184b87ebd886a5587eb1a3}{getForeignPort} ()  throw (SocketException)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCommunicatingSocket_a0017517b8d6e761fde0c40475af3b2ab}{
+\hyperlink{classCommunicatingSocket_a0017517b8d6e761fde0c40475af3b2ab}{CommunicatingSocket} (int type, int protocol)  throw (SocketException)}
+\label{classCommunicatingSocket_a0017517b8d6e761fde0c40475af3b2ab}
+
+\begin{DoxyCompactList}\small\item\em Constructor to be overriden. \item\end{DoxyCompactList}\item 
+\hypertarget{classCommunicatingSocket_a27d758db782b3be7d28741e92cb613d1}{
+\hyperlink{classCommunicatingSocket_a27d758db782b3be7d28741e92cb613d1}{CommunicatingSocket} (int newConnSD)}
+\label{classCommunicatingSocket_a27d758db782b3be7d28741e92cb613d1}
+
+\begin{DoxyCompactList}\small\item\em Constructor to be overriden. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSocket}{Socket} which is able to connect, send, and receive. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{
+\index{CommunicatingSocket@{CommunicatingSocket}!connect@{connect}}
+\index{connect@{connect}!CommunicatingSocket@{CommunicatingSocket}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void CommunicatingSocket::connect (const string \& {\em foreignAddress}, \/  unsigned short {\em foreignPort})  throw ({\bf SocketException})}}
+\label{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}
+Establish a socket connection with the given foreign address and port 
+\begin{DoxyParams}{Parameters}
+\item[{\em foreignAddress}]foreign address (IP address or name) \item[{\em foreignPort}]foreign port \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to establish connection \end{DoxyExceptions}
+\hypertarget{classCommunicatingSocket_a13f9eca30ef56836cf23c163c848c09e}{
+\index{CommunicatingSocket@{CommunicatingSocket}!getForeignAddress@{getForeignAddress}}
+\index{getForeignAddress@{getForeignAddress}!CommunicatingSocket@{CommunicatingSocket}}
+\subsubsection[{getForeignAddress}]{\setlength{\rightskip}{0pt plus 5cm}string CommunicatingSocket::getForeignAddress ()  throw ({\bf SocketException})}}
+\label{classCommunicatingSocket_a13f9eca30ef56836cf23c163c848c09e}
+Get the foreign address. Call \hyperlink{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{connect()} before calling \hyperlink{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}{recv()} \begin{DoxyReturn}{Returns}
+foreign address 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to fetch foreign address \end{DoxyExceptions}
+\hypertarget{classCommunicatingSocket_a184fbb4775184b87ebd886a5587eb1a3}{
+\index{CommunicatingSocket@{CommunicatingSocket}!getForeignPort@{getForeignPort}}
+\index{getForeignPort@{getForeignPort}!CommunicatingSocket@{CommunicatingSocket}}
+\subsubsection[{getForeignPort}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short CommunicatingSocket::getForeignPort ()  throw ({\bf SocketException})}}
+\label{classCommunicatingSocket_a184fbb4775184b87ebd886a5587eb1a3}
+Get the foreign port. Call \hyperlink{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{connect()} before calling \hyperlink{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}{recv()} \begin{DoxyReturn}{Returns}
+foreign port 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to fetch foreign port \end{DoxyExceptions}
+\hypertarget{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}{
+\index{CommunicatingSocket@{CommunicatingSocket}!recv@{recv}}
+\index{recv@{recv}!CommunicatingSocket@{CommunicatingSocket}}
+\subsubsection[{recv}]{\setlength{\rightskip}{0pt plus 5cm}int CommunicatingSocket::recv (void $\ast$ {\em buffer}, \/  int {\em bufferLen})  throw ({\bf SocketException})}}
+\label{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}
+Read into the given buffer up to bufferLen bytes data from this socket. Call \hyperlink{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{connect()} before calling \hyperlink{classCommunicatingSocket_a7cf1fd470c0060171b68df9f68c7bd01}{recv()} 
+\begin{DoxyParams}{Parameters}
+\item[{\em buffer}]buffer to receive the data \item[{\em bufferLen}]maximum number of bytes to read into buffer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of bytes read, 0 for EOF, and -\/1 for error 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to receive data \end{DoxyExceptions}
+\hypertarget{classCommunicatingSocket_aca4e86085c064641e86ae24ea29bbb94}{
+\index{CommunicatingSocket@{CommunicatingSocket}!send@{send}}
+\index{send@{send}!CommunicatingSocket@{CommunicatingSocket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void CommunicatingSocket::send (const void $\ast$ {\em buffer}, \/  int {\em bufferLen})  throw ({\bf SocketException})}}
+\label{classCommunicatingSocket_aca4e86085c064641e86ae24ea29bbb94}
+Write the given buffer to this socket. Call \hyperlink{classCommunicatingSocket_a9192374d9baab8e189860aa8d913683c}{connect()} before calling \hyperlink{classCommunicatingSocket_aca4e86085c064641e86ae24ea29bbb94}{send()} 
+\begin{DoxyParams}{Parameters}
+\item[{\em buffer}]buffer to be written \item[{\em bufferLen}]number of bytes from buffer to be written \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to send data \end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Network/Berk/CommunicatingSocket.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Network/Berk/CommunicatingSocket.cpp\end{DoxyCompactItemize}

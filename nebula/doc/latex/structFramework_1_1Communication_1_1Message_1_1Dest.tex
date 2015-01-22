@@ -1,0 +1,44 @@
+\hypertarget{structFramework_1_1Communication_1_1Message_1_1Dest}{
+\section{Framework::Communication::Message::Dest Struct Reference}
+\label{structFramework_1_1Communication_1_1Message_1_1Dest}\index{Framework::Communication::Message::Dest@{Framework::Communication::Message::Dest}}
+}
+
+
+Message Destination  
+
+
+{\ttfamily \#include $<$FR\_\-COM\_\-MSG\_\-Message.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structFramework_1_1Communication_1_1Message_1_1Dest_aa611b1a91261ddc29153c6ce2382f9f6}{
+\hyperlink{classFramework_1_1Communication_1_1IComm}{FR\_\-COM\_\-IComm} $\ast$ \hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest_aa611b1a91261ddc29153c6ce2382f9f6}{icomm}}
+\label{structFramework_1_1Communication_1_1Message_1_1Dest_aa611b1a91261ddc29153c6ce2382f9f6}
+
+\begin{DoxyCompactList}\small\item\em IComm pointer \item\end{DoxyCompactList}\item 
+\hypertarget{structFramework_1_1Communication_1_1Message_1_1Dest_ac1ec4f8071c73e984673138423c6918f}{
+int \hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest_ac1ec4f8071c73e984673138423c6918f}{type}}
+\label{structFramework_1_1Communication_1_1Message_1_1Dest_ac1ec4f8071c73e984673138423c6918f}
+
+\begin{DoxyCompactList}\small\item\em Message Destination \hyperlink{structFramework_1_1Communication_1_1Message_1_1Type}{Type} \item\end{DoxyCompactList}\item 
+\hypertarget{structFramework_1_1Communication_1_1Message_1_1Dest_a12d36bfb324cfa419b81bbd926e8421c}{
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries Addr\_CO\_AC\_AD\_ActorBase} \{\\
+\>\>int {\bfseries universe}\\
+\>\>int {\bfseries scene}\\
+\>\>int {\bfseries actorBase}\\
+\>\} {\bfseries acAdActorBase}\\
+\} {\bfseries addr}}
+\label{structFramework_1_1Communication_1_1Message_1_1Dest_a12d36bfb324cfa419b81bbd926e8421c}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Message Destination \hyperlink{structFramework_1_1Communication_1_1Message_1_1Data}{Data} used to route the Message to its final destination if a direct Post() is not possible (ex. message is sent over a network) 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Framework/Communication/Message/FR\_\-COM\_\-MSG\_\-Message.h\end{DoxyCompactItemize}

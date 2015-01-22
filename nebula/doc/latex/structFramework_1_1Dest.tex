@@ -1,0 +1,44 @@
+\hypertarget{structFramework_1_1Dest}{
+\section{Framework::Dest Struct Reference}
+\label{structFramework_1_1Dest}\index{Framework::Dest@{Framework::Dest}}
+}
+
+
+Message Destination  
+
+
+{\ttfamily \#include $<$Message.h$>$}\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structFramework_1_1Dest_a8391adc2ec6eea2e6434c261140be36c}{
+\hyperlink{classFramework_1_1IComm}{IComm} $\ast$ \hyperlink{structFramework_1_1Dest_a8391adc2ec6eea2e6434c261140be36c}{icomm}}
+\label{structFramework_1_1Dest_a8391adc2ec6eea2e6434c261140be36c}
+
+\begin{DoxyCompactList}\small\item\em IComm pointer \item\end{DoxyCompactList}\item 
+\hypertarget{structFramework_1_1Dest_a2e16dcdae76c60a7ffcf44f6bba8be25}{
+int \hyperlink{structFramework_1_1Dest_a2e16dcdae76c60a7ffcf44f6bba8be25}{type}}
+\label{structFramework_1_1Dest_a2e16dcdae76c60a7ffcf44f6bba8be25}
+
+\begin{DoxyCompactList}\small\item\em Message Destination Type \item\end{DoxyCompactList}\item 
+\hypertarget{structFramework_1_1Dest_a2fc2acdb360135ee1ce9106405a57679}{
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries Addr\_AcAdActorBase} \{\\
+\>\>int {\bfseries universe}\\
+\>\>int {\bfseries scene}\\
+\>\>int {\bfseries actorBase}\\
+\>\} {\bfseries acAdActorBase}\\
+\} {\bfseries addr}}
+\label{structFramework_1_1Dest_a2fc2acdb360135ee1ce9106405a57679}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Message Destination Data used to route the Message to its final destination if a direct Post() is not possible (ex. message is sent over a network) 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Framework/Message.h\end{DoxyCompactItemize}

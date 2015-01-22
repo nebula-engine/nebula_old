@@ -1,0 +1,52 @@
+#ifndef _ACTOR_PHYSICS_PHYSX_RIGID_BODY_H
+#define _ACTOR_PHYSICS_PHYSX_RIGID_BODY_H
+
+#include <content/Actor/Physics/CO_AC_PH_RigidBody.h>
+#include <content/Actor/Physics/PhysX/CO_AC_PH_PX_RigidActor.h>
+
+namespace Content {
+	namespace Actor {
+		namespace Physics {
+			namespace PhysX {
+				/// physx implementation
+				class RigidBody: virtual public CO_AC_PH_RigidBody, virtual public CO_AC_PH_PX_RigidActor {
+				public:
+					/// Constructor
+									RigidBody();
+					/// Destructor
+									~RigidBody();
+
+					///@name Standard Functions
+					///@{
+					/// Initialize
+					virtual	void						VInit( Void* data );
+					/// ShutDown
+					virtual void						VShutDown();
+					/// Update
+					virtual void						VUpdate();
+					/// Step
+					virtual	void						VStep( Void* );
+					///@}
+					
+					
+				protected:
+					/// PxRigidBody
+					physx::PxRigidBody*	m_pxRigidBody;
+		
+					/// velocity
+					physx::PxVec3		m_velocity;
+					/// density
+					physx::PxReal		m_density;
+				};
+			};
+		};
+	};
+};
+
+
+#endif
+
+
+
+
+

@@ -1,0 +1,131 @@
+\hypertarget{classSocket}{
+\section{Socket Class Reference}
+\label{classSocket}\index{Socket@{Socket}}
+}
+
+
+Base class representing basic communication endpoint.  
+
+
+{\ttfamily \#include $<$Socket.h$>$}Inheritance diagram for Socket::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classSocket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSocket_aeac4eb6379a543d38ed88977d3b6630a}{
+\hyperlink{classSocket_aeac4eb6379a543d38ed88977d3b6630a}{$\sim$Socket} ()}
+\label{classSocket_aeac4eb6379a543d38ed88977d3b6630a}
+
+\begin{DoxyCompactList}\small\item\em Close and deallocate this socket. \item\end{DoxyCompactList}\item 
+string \hyperlink{classSocket_a0fca07bdfa97874fba1a17995ed7cda3}{getLocalAddress} ()  throw (SocketException)
+\item 
+unsigned short \hyperlink{classSocket_ae01143b667d69483a2f53d0f4ce7eeed}{getLocalPort} ()  throw (SocketException)
+\item 
+void \hyperlink{classSocket_a773fe4a35146002de76952e16fdebcfa}{setLocalPort} (unsigned short localPort)  throw (SocketException)
+\item 
+void \hyperlink{classSocket_aa6b986410bc2e606ba27d01fa7cb8836}{setLocalAddressAndPort} (const string \&localAddress, unsigned short localPort=0)  throw (SocketException)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classSocket_ac5060aeb501044044351d5a85b3fc95f}{cleanUp} ()  throw (SocketException)
+\item 
+static unsigned short \hyperlink{classSocket_a982c63b25c5b756321a74074a275adbc}{resolveService} (const string \&service, const string \&protocol=\char`\"{}tcp\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSocket_a53e00027bab2125a2b407914c6148589}{
+\hyperlink{classSocket_a53e00027bab2125a2b407914c6148589}{Socket} (int type, int protocol)  throw (SocketException)}
+\label{classSocket_a53e00027bab2125a2b407914c6148589}
+
+\begin{DoxyCompactList}\small\item\em Constructor overridden by derived class. \item\end{DoxyCompactList}\item 
+\hypertarget{classSocket_a6a2609eef6559336a595a336f138d395}{
+\hyperlink{classSocket_a6a2609eef6559336a595a336f138d395}{Socket} (int \hyperlink{classSocket_ad5704d2fdfb062139e1f88831617bbfb}{sockDesc})}
+\label{classSocket_a6a2609eef6559336a595a336f138d395}
+
+\begin{DoxyCompactList}\small\item\em Constructor overridden by derived class. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSocket_ad5704d2fdfb062139e1f88831617bbfb}{
+int \hyperlink{classSocket_ad5704d2fdfb062139e1f88831617bbfb}{sockDesc}}
+\label{classSocket_ad5704d2fdfb062139e1f88831617bbfb}
+
+\begin{DoxyCompactList}\small\item\em socket descriptor \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class representing basic communication endpoint. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSocket_ac5060aeb501044044351d5a85b3fc95f}{
+\index{Socket@{Socket}!cleanUp@{cleanUp}}
+\index{cleanUp@{cleanUp}!Socket@{Socket}}
+\subsubsection[{cleanUp}]{\setlength{\rightskip}{0pt plus 5cm}void Socket::cleanUp ()  throw ({\bf SocketException})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classSocket_ac5060aeb501044044351d5a85b3fc95f}
+If WinSock, unload the WinSock DLLs; otherwise do nothing. We ignore this in our sample client code but include it in the library for completeness. If you are running on Windows and you are concerned about DLL resource consumption, call this after you are done with all \hyperlink{classSocket}{Socket} instances. If you execute this on Windows while some instance of \hyperlink{classSocket}{Socket} exists, you are toast. For portability of client code, this is an empty function on non-\/Windows platforms so you can always include it. 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown WinSock clean up fails \end{DoxyExceptions}
+\hypertarget{classSocket_a0fca07bdfa97874fba1a17995ed7cda3}{
+\index{Socket@{Socket}!getLocalAddress@{getLocalAddress}}
+\index{getLocalAddress@{getLocalAddress}!Socket@{Socket}}
+\subsubsection[{getLocalAddress}]{\setlength{\rightskip}{0pt plus 5cm}string Socket::getLocalAddress ()  throw ({\bf SocketException})}}
+\label{classSocket_a0fca07bdfa97874fba1a17995ed7cda3}
+Get the local address \begin{DoxyReturn}{Returns}
+local address of socket 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if fetch fails \end{DoxyExceptions}
+\hypertarget{classSocket_ae01143b667d69483a2f53d0f4ce7eeed}{
+\index{Socket@{Socket}!getLocalPort@{getLocalPort}}
+\index{getLocalPort@{getLocalPort}!Socket@{Socket}}
+\subsubsection[{getLocalPort}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Socket::getLocalPort ()  throw ({\bf SocketException})}}
+\label{classSocket_ae01143b667d69483a2f53d0f4ce7eeed}
+Get the local port \begin{DoxyReturn}{Returns}
+local port of socket 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if fetch fails \end{DoxyExceptions}
+\hypertarget{classSocket_a982c63b25c5b756321a74074a275adbc}{
+\index{Socket@{Socket}!resolveService@{resolveService}}
+\index{resolveService@{resolveService}!Socket@{Socket}}
+\subsubsection[{resolveService}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Socket::resolveService (const string \& {\em service}, \/  const string \& {\em protocol} = {\ttfamily \char`\"{}tcp\char`\"{}})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classSocket_a982c63b25c5b756321a74074a275adbc}
+Resolve the specified service for the specified protocol to the corresponding port number in host byte order 
+\begin{DoxyParams}{Parameters}
+\item[{\em service}]service to resolve (e.g., \char`\"{}http\char`\"{}) \item[{\em protocol}]protocol of service to resolve. Default is \char`\"{}tcp\char`\"{}. \end{DoxyParams}
+\hypertarget{classSocket_aa6b986410bc2e606ba27d01fa7cb8836}{
+\index{Socket@{Socket}!setLocalAddressAndPort@{setLocalAddressAndPort}}
+\index{setLocalAddressAndPort@{setLocalAddressAndPort}!Socket@{Socket}}
+\subsubsection[{setLocalAddressAndPort}]{\setlength{\rightskip}{0pt plus 5cm}void Socket::setLocalAddressAndPort (const string \& {\em localAddress}, \/  unsigned short {\em localPort} = {\ttfamily 0})  throw ({\bf SocketException})}}
+\label{classSocket_aa6b986410bc2e606ba27d01fa7cb8836}
+Set the local port to the specified port and the local address to the specified address. If you omit the port, a random port will be selected. 
+\begin{DoxyParams}{Parameters}
+\item[{\em localAddress}]local address \item[{\em localPort}]local port \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if setting local port or address fails \end{DoxyExceptions}
+\hypertarget{classSocket_a773fe4a35146002de76952e16fdebcfa}{
+\index{Socket@{Socket}!setLocalPort@{setLocalPort}}
+\index{setLocalPort@{setLocalPort}!Socket@{Socket}}
+\subsubsection[{setLocalPort}]{\setlength{\rightskip}{0pt plus 5cm}void Socket::setLocalPort (unsigned short {\em localPort})  throw ({\bf SocketException})}}
+\label{classSocket_a773fe4a35146002de76952e16fdebcfa}
+Set the local port to the specified port and the local address to any interface 
+\begin{DoxyParams}{Parameters}
+\item[{\em localPort}]local port \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if setting local port fails \end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Network/Berk/Socket.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Network/Berk/Socket.cpp\end{DoxyCompactItemize}

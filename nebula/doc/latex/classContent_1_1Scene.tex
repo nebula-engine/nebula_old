@@ -1,0 +1,208 @@
+\hypertarget{classContent_1_1Scene}{
+\section{Content::Scene Class Reference}
+\label{classContent_1_1Scene}\index{Content::Scene@{Content::Scene}}
+}
+
+
+scene  
+
+
+{\ttfamily \#include $<$Scene.h$>$}Inheritance diagram for Content::Scene::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classContent_1_1Scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_ab2d94decf8888b2cb3a96ea857d5a8cc}{
+\hyperlink{classContent_1_1Scene_ab2d94decf8888b2cb3a96ea857d5a8cc}{Scene} ()}
+\label{classContent_1_1Scene_ab2d94decf8888b2cb3a96ea857d5a8cc}
+
+\begin{DoxyCompactList}\small\item\em default Constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_a33e133efb78245f9dd8e37100aadb605}{
+\hyperlink{classContent_1_1Scene_a33e133efb78245f9dd8e37100aadb605}{Scene} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1Scene_a33e133efb78245f9dd8e37100aadb605}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_acefed292f287f3d0e28b2ed71709f60f}{
+\hyperlink{classContent_1_1Scene_acefed292f287f3d0e28b2ed71709f60f}{Scene} (const \hyperlink{classContent_1_1Scene}{Scene} \&scene)}
+\label{classContent_1_1Scene_acefed292f287f3d0e28b2ed71709f60f}
+
+\begin{DoxyCompactList}\small\item\em copy Constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_a8425655f3f95feb5bee8965584d0c87c}{
+virtual \hyperlink{classContent_1_1Scene_a8425655f3f95feb5bee8965584d0c87c}{$\sim$Scene} ()}
+\label{classContent_1_1Scene_a8425655f3f95feb5bee8965584d0c87c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_abb74be668e13bd61a4b31e973685df99}{
+\hyperlink{classContent_1_1Scene}{Scene} \& \hyperlink{classContent_1_1Scene_abb74be668e13bd61a4b31e973685df99}{operator=} (const \hyperlink{classContent_1_1Scene}{Scene} \&scene)}
+\label{classContent_1_1Scene_abb74be668e13bd61a4b31e973685df99}
+
+\begin{DoxyCompactList}\small\item\em assignment \item\end{DoxyCompactList}\item 
+void \hyperlink{classContent_1_1Scene_abfc7b71be87293aba330902c9c9fbc41}{CreateViewHuman} (::\hyperlink{classContent_1_1ViewHuman}{Content::ViewHuman} $\ast$\&viewHuman)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf standard functions}\par
+{\em \label{_amgrp57f1c50bd31a278c7d9f58b3e669c84c}
+ initialization }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a706fbd66a188667d4353f2e0db273ad1}{
+virtual void {\bfseries VInitialize} ()}
+\label{classContent_1_1Scene_a706fbd66a188667d4353f2e0db273ad1}
+
+\item 
+\hypertarget{classContent_1_1Scene_a5c00bfb6b5472ca9f3e4aa959003dc1c}{
+virtual void \hyperlink{classContent_1_1Scene_a5c00bfb6b5472ca9f3e4aa959003dc1c}{VUpdate} ()}
+\label{classContent_1_1Scene_a5c00bfb6b5472ca9f3e4aa959003dc1c}
+
+\begin{DoxyCompactList}\small\item\em update \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_a65c9548fe3a5ec1ce7973abfdec8edba}{
+void \hyperlink{classContent_1_1Scene_a65c9548fe3a5ec1ce7973abfdec8edba}{Step} (float dt)}
+\label{classContent_1_1Scene_a65c9548fe3a5ec1ce7973abfdec8edba}
+
+\begin{DoxyCompactList}\small\item\em step \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_a02ccf4e7a4cb1ba6f422261b3874b0db}{
+void \hyperlink{classContent_1_1Scene_a02ccf4e7a4cb1ba6f422261b3874b0db}{Render} (\hyperlink{classPlatform_1_1Renderer_1_1Renderer}{Platform::Renderer::Renderer} $\ast$render)}
+\label{classContent_1_1Scene_a02ccf4e7a4cb1ba6f422261b3874b0db}
+
+\begin{DoxyCompactList}\small\item\em render \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf register functions}\par
+{\em \label{_amgrp74151e0c44c9df43fcf80837230dbc8a}
+ RigidDynamic }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_af0d56be67cbcb4efad5215cfa33aa46c}{
+void {\bfseries RegisterRigidDynamic} (::\hyperlink{classContent_1_1Actor_1_1Admin_1_1RigidDynamic}{AcAdRigidDynamic} $\ast$rigidDynamic)}
+\label{classContent_1_1Scene_af0d56be67cbcb4efad5215cfa33aa46c}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Fetch}\par
+{\em \label{_amgrp4ea7755f84f02d23876d90be2f9765cf}
+ PhysicsScene }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a5afe6f9ed2ab48564b4507d668f63c46}{
+\hyperlink{classContent_1_1Physics_1_1PhysicsScene}{Physics::PhysicsScene} $\ast$ {\bfseries GetPhysicsScene} ()}
+\label{classContent_1_1Scene_a5afe6f9ed2ab48564b4507d668f63c46}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf MapPtr ActorBase operations}\par
+{\em \label{_amgrp61212cb9feae85dabb2f0d2410cb68a0}
+ render ActorBase objects }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_ab47c0b8c3419a8971242a30a2123f531}{
+int {\bfseries ActorBaseRender\_\-For} (\hyperlink{classPlatform_1_1Renderer_1_1Renderer}{Platform::Renderer::Renderer} $\ast$render)}
+\label{classContent_1_1Scene_ab47c0b8c3419a8971242a30a2123f531}
+
+\item 
+\hypertarget{classContent_1_1Scene_a13a00aed8548b91e8e77af027cf37ae3}{
+int \hyperlink{classContent_1_1Scene_a13a00aed8548b91e8e77af027cf37ae3}{ActorBaseStep\_\-For} (float dt)}
+\label{classContent_1_1Scene_a13a00aed8548b91e8e77af027cf37ae3}
+
+\begin{DoxyCompactList}\small\item\em step ActorBase objects \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Individual ActorBase operations}\par
+{\em \label{_amgrpbbc3c30f8b1ae7bdeff2a0b529da0242}
+ step ActorBase }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a183cddc9f57e3f2aae50197ae788e121}{
+void {\bfseries ActorBaseStep} (::\hyperlink{classContent_1_1Actor_1_1Admin_1_1ActorBase}{AcAdActorBase} $\ast$actorBase)}
+\label{classContent_1_1Scene_a183cddc9f57e3f2aae50197ae788e121}
+
+\item 
+void \hyperlink{classContent_1_1Scene_aa23a026de11723b0e67eeb7bf46a08c7}{ActorBaseRender} (::\hyperlink{classContent_1_1Actor_1_1Admin_1_1ActorBase}{AcAdActorBase} $\ast$actorBase, \hyperlink{classPlatform_1_1Renderer_1_1Renderer}{Platform::Renderer::Renderer} $\ast$render)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf individual view functions}\par
+{\em \label{_amgrpc7b082c0387da43bf749d0d553895023}
+ update view }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_ad4e869da34f25125c21ac0319ea0ef1f}{
+void {\bfseries ViewUpdate} (\hyperlink{classContent_1_1View}{View} $\ast$view)}
+\label{classContent_1_1Scene_ad4e869da34f25125c21ac0319ea0ef1f}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a59b375aa49b953be8ffb91195d019856}{
+::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$ \hyperlink{classContent_1_1Scene_a59b375aa49b953be8ffb91195d019856}{m\_\-app}}
+\label{classContent_1_1Scene_a59b375aa49b953be8ffb91195d019856}
+
+\begin{DoxyCompactList}\small\item\em global app \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Children}\par
+{\em \label{_amgrp64e4aca4297806247f62a7b5f8cbd3df}
+ Physics Scene }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a132258ff9389fea600fbec1597e34361}{
+\hyperlink{classContent_1_1Physics_1_1PhysicsScene}{Physics::PhysicsScene} $\ast$ {\bfseries m\_\-physicsScene}}
+\label{classContent_1_1Scene_a132258ff9389fea600fbec1597e34361}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf maps}\par
+{\em \label{_amgrp7e94476d62556cc8501e3df5b8d6470d}
+ ActorBase }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a6b954053ab2128b9212e6a23ca594466}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classContent_1_1Actor_1_1Admin_1_1ActorBase}{AcAdActorBase} $>$ {\bfseries m\_\-actorBase}}
+\label{classContent_1_1Scene_a6b954053ab2128b9212e6a23ca594466}
+
+\item 
+\hypertarget{classContent_1_1Scene_a37989fc38d0fbf6076e3ab8b97766413}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classContent_1_1View}{View} $>$ \hyperlink{classContent_1_1Scene_a37989fc38d0fbf6076e3ab8b97766413}{m\_\-view}}
+\label{classContent_1_1Scene_a37989fc38d0fbf6076e3ab8b97766413}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classContent_1_1View}{View}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf time}\par
+{\em \label{_amgrp07cc694b9b3fc636710fa08b6922c42b}
+ time since last step }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Scene_a77b8d3b84e2e8b21134ceb9be3dc0df7}{
+float {\bfseries m\_\-accumulator}}
+\label{classContent_1_1Scene_a77b8d3b84e2e8b21134ceb9be3dc0df7}
+
+\item 
+\hypertarget{classContent_1_1Scene_a868a0e8dd3427165876b047b4fc098ac}{
+float \hyperlink{classContent_1_1Scene_a868a0e8dd3427165876b047b4fc098ac}{m\_\-stepSize}}
+\label{classContent_1_1Scene_a868a0e8dd3427165876b047b4fc098ac}
+
+\begin{DoxyCompactList}\small\item\em step size \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Scene_a1737b1a39bb7a6fa0155d9fb7a63c163}{
+time\_\-t \hyperlink{classContent_1_1Scene_a1737b1a39bb7a6fa0155d9fb7a63c163}{m\_\-last}}
+\label{classContent_1_1Scene_a1737b1a39bb7a6fa0155d9fb7a63c163}
+
+\begin{DoxyCompactList}\small\item\em time of last update \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+scene 
+
+\subsection{Member Function Documentation}
+\hypertarget{classContent_1_1Scene_aa23a026de11723b0e67eeb7bf46a08c7}{
+\index{Content::Scene@{Content::Scene}!ActorBaseRender@{ActorBaseRender}}
+\index{ActorBaseRender@{ActorBaseRender}!Content::Scene@{Content::Scene}}
+\subsubsection[{ActorBaseRender}]{\setlength{\rightskip}{0pt plus 5cm}void Content::Scene::ActorBaseRender (::{\bf AcAdActorBase} $\ast$ {\em actorBase}, \/  {\bf Platform::Renderer::Renderer} $\ast$ {\em render})}}
+\label{classContent_1_1Scene_aa23a026de11723b0e67eeb7bf46a08c7}
+Render {\itshape actorBase\/} using {\itshape render\/} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em actorBase}]ActorBase object to render \item[\mbox{$\leftarrow$} {\em render}]Render object to use \end{DoxyParams}
+\hypertarget{classContent_1_1Scene_abfc7b71be87293aba330902c9c9fbc41}{
+\index{Content::Scene@{Content::Scene}!CreateViewHuman@{CreateViewHuman}}
+\index{CreateViewHuman@{CreateViewHuman}!Content::Scene@{Content::Scene}}
+\subsubsection[{CreateViewHuman}]{\setlength{\rightskip}{0pt plus 5cm}void Content::Scene::CreateViewHuman (::{\bf Content::ViewHuman} $\ast$\& {\em viewHuman})}}
+\label{classContent_1_1Scene_abfc7b71be87293aba330902c9c9fbc41}
+Create a \hyperlink{classContent_1_1ViewHuman}{ViewHuman} object 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em viewHuman}]reference to pointer to new object \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Scene.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Scene.cpp\end{DoxyCompactItemize}

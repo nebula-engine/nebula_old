@@ -1,0 +1,105 @@
+\hypertarget{index_intro}{}\section{Introduction}\label{index_intro}
+\hypertarget{index_proj}{}\subsection{The Project}\label{index_proj}
+Nebula is a 3D game engine written in c++. The goal of the project is a develop a versatile and cross-\/platform SDK. The SDK is first being developed for Windows and Linux systems with OpenGL for 3D rendering. PhysX by NVidia is used for physics. The goal for future versions is to support additional platforms such as XBOX, PS3, and Android as well as other rendering API's.\hypertarget{index_author}{}\subsection{The Author}\label{index_author}
+The sole author is Charles Rymal.\hypertarget{index_TODO}{}\subsection{TODO}\label{index_TODO}
+
+\begin{DoxyItemize}
+\item Get Windows window and rendering working
+\item Create animation hierarchy system
+\item Create rendering system with arbitarary meshes for any item, texture, lights, etc.
+\item Download and learn 3D model editor/ texture editor
+\item Create random maze generator at high level
+\item Change all float and float-\/dependent to typedef that can be switched easily from float to double
+\item Create Event communication system
+\item Create Maze Game
+\item Create game logic tools
+\item Create scripting
+\begin{DoxyItemize}
+\item For use by game designer
+\end{DoxyItemize}
+\item Create console
+\begin{DoxyItemize}
+\item Create text rendering
+\end{DoxyItemize}
+\item Create generalized player programmability
+\begin{DoxyItemize}
+\item Implement using multiple scripting languages
+\begin{DoxyItemize}
+\item Assembly
+\item C
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_outline}{}\section{Outline of Things Not Added}\label{index_outline}
+
+\begin{DoxyItemize}
+\item Physics
+\begin{DoxyItemize}
+\item Physx
+\begin{DoxyItemize}
+\item particle
+\item cloth
+\end{DoxyItemize}
+\item APEX
+\begin{DoxyItemize}
+\item destruction
+\item turbulence
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Animation
+\begin{DoxyItemize}
+\item Top level information about an animation or animation object.
+\item Must potentially work with Actor, Physics, Render,...
+\end{DoxyItemize}
+\item Audio
+\item Cinematics
+\item Render
+\begin{DoxyItemize}
+\item HUD
+\end{DoxyItemize}
+\item Level
+\item Scripting
+\begin{DoxyItemize}
+\item Defined in context of other systems such as AI, Level, Render,...
+\end{DoxyItemize}
+\item Tools
+\begin{DoxyItemize}
+\item Model Editor
+\begin{DoxyItemize}
+\item external tool for creation of characters, weapons, vehciles, etc.
+\end{DoxyItemize}
+\item Level Editor
+\begin{DoxyItemize}
+\item terrain (FLOATistic shape and texture)
+\item terrain algorithm editor
+\item events
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Camera Angles
+\begin{DoxyItemize}
+\item Relative to various axes
+\begin{DoxyItemize}
+\item Actor
+\item Actor shape
+\item CO\_\-SC\_\-AD\_\-Scene
+\end{DoxyItemize}
+\item View behavior
+\begin{DoxyItemize}
+\item orientation
+\item translation
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Memory Zones
+\begin{DoxyItemize}
+\item physics data
+\item render data
+\item content data
+\item abstract data not used directly by physics or render
+\begin{DoxyItemize}
+\item example
+\begin{DoxyItemize}
+\item health
+\item objectives 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

@@ -1,0 +1,113 @@
+\hypertarget{classPlatform_1_1Window_1_1Window}{
+\section{Platform::Window::Window Class Reference}
+\label{classPlatform_1_1Window_1_1Window}\index{Platform::Window::Window@{Platform::Window::Window}}
+}
+
+
+Window  
+
+
+{\ttfamily \#include $<$PL\_\-WI\_\-Window.h$>$}Inheritance diagram for Platform::Window::Window::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classPlatform_1_1Window_1_1Window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructor and Destructor}\par
+{\em \label{_amgrp65b93122a8e010d8931d904429460f59}
+ Constructor }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a6be8326ace2b30428402d1d25202b7e9}{
+{\bfseries Window} ()}
+\label{classPlatform_1_1Window_1_1Window_a6be8326ace2b30428402d1d25202b7e9}
+
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a2ec636db3227142e323d33bacab16a8b}{
+virtual \hyperlink{classPlatform_1_1Window_1_1Window_a2ec636db3227142e323d33bacab16a8b}{$\sim$Window} ()}
+\label{classPlatform_1_1Window_1_1Window_a2ec636db3227142e323d33bacab16a8b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Initialization and ShutDown}\par
+{\em \label{_amgrp2a8ba145c14f2dcb11ba0fe271240078}
+ initialize }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a6fb43803be5511e912e05552a6f57354}{
+virtual void {\bfseries VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)}
+\label{classPlatform_1_1Window_1_1Window_a6fb43803be5511e912e05552a6f57354}
+
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_ad02b2536b5c8203a6c38b6b2cd72a225}{
+virtual void \hyperlink{classPlatform_1_1Window_1_1Window_ad02b2536b5c8203a6c38b6b2cd72a225}{VShutDown} ()}
+\label{classPlatform_1_1Window_1_1Window_ad02b2536b5c8203a6c38b6b2cd72a225}
+
+\begin{DoxyCompactList}\small\item\em shutdown \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a479fa6dd0daa055fb2f34b6f2b27c04a}{
+virtual void \hyperlink{classPlatform_1_1Window_1_1Window_a479fa6dd0daa055fb2f34b6f2b27c04a}{VUpdate} ()}
+\label{classPlatform_1_1Window_1_1Window_a479fa6dd0daa055fb2f34b6f2b27c04a}
+
+\begin{DoxyCompactList}\small\item\em update \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ render }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_abeedb57a4f085f1185db891314577ff7}{
+\hyperlink{classPlatform_1_1Renderer_1_1Renderer}{PL\_\-RE\_\-Renderer} $\ast$ {\bfseries GetRender} () const }
+\label{classPlatform_1_1Window_1_1Window_abeedb57a4f085f1185db891314577ff7}
+
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a7647772727688df1113f6ae37b0a3b45}{
+\hyperlink{classPlatform_1_1Input_1_1Input}{PL\_\-IN\_\-Input} $\ast$ \hyperlink{classPlatform_1_1Window_1_1Window_a7647772727688df1113f6ae37b0a3b45}{GetInput} () const }
+\label{classPlatform_1_1Window_1_1Window_a7647772727688df1113f6ae37b0a3b45}
+
+\begin{DoxyCompactList}\small\item\em input \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a650337951a0e8b4f1c8687934d60b010}{
+\hyperlink{classFramework_1_1App}{FR\_\-App} $\ast$ \hyperlink{classPlatform_1_1Window_1_1Window_a650337951a0e8b4f1c8687934d60b010}{m\_\-app}}
+\label{classPlatform_1_1Window_1_1Window_a650337951a0e8b4f1c8687934d60b010}
+
+\begin{DoxyCompactList}\small\item\em App \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a70a65325801789936bd43fa96743e1de}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform}{PL\_\-PL\_\-Platform} $\ast$ \hyperlink{classPlatform_1_1Window_1_1Window_a70a65325801789936bd43fa96743e1de}{m\_\-platform}}
+\label{classPlatform_1_1Window_1_1Window_a70a65325801789936bd43fa96743e1de}
+
+\begin{DoxyCompactList}\small\item\em Platform \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a1f225fe7e7e186bed80142d51c2b9d35}{
+\hyperlink{classPlatform_1_1Renderer_1_1Renderer}{PL\_\-RE\_\-Renderer} $\ast$ \hyperlink{classPlatform_1_1Window_1_1Window_a1f225fe7e7e186bed80142d51c2b9d35}{m\_\-renderer}}
+\label{classPlatform_1_1Window_1_1Window_a1f225fe7e7e186bed80142d51c2b9d35}
+
+\begin{DoxyCompactList}\small\item\em render \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a8a04579dac1df72eeeb8890f2a39b4c8}{
+\hyperlink{classPlatform_1_1Input_1_1Input}{PL\_\-IN\_\-Input} $\ast$ \hyperlink{classPlatform_1_1Window_1_1Window_a8a04579dac1df72eeeb8890f2a39b4c8}{m\_\-input}}
+\label{classPlatform_1_1Window_1_1Window_a8a04579dac1df72eeeb8890f2a39b4c8}
+
+\begin{DoxyCompactList}\small\item\em input \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a781d583ef1ef232b1d6c2ff2fb2c425d}{
+bool \hyperlink{classPlatform_1_1Window_1_1Window_a781d583ef1ef232b1d6c2ff2fb2c425d}{m\_\-hasFocus}}
+\label{classPlatform_1_1Window_1_1Window_a781d583ef1ef232b1d6c2ff2fb2c425d}
+
+\begin{DoxyCompactList}\small\item\em focus \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_ad95dd62105f2c93a2cca866832fc8207}{
+int \hyperlink{classPlatform_1_1Window_1_1Window_ad95dd62105f2c93a2cca866832fc8207}{m\_\-center\_\-x}}
+\label{classPlatform_1_1Window_1_1Window_ad95dd62105f2c93a2cca866832fc8207}
+
+\begin{DoxyCompactList}\small\item\em x \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Window_1_1Window_a40eabc8f0c4db01bc3804fa7c24147ee}{
+int \hyperlink{classPlatform_1_1Window_1_1Window_a40eabc8f0c4db01bc3804fa7c24147ee}{m\_\-center\_\-y}}
+\label{classPlatform_1_1Window_1_1Window_a40eabc8f0c4db01bc3804fa7c24147ee}
+
+\begin{DoxyCompactList}\small\item\em y \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Window 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Platform/Window/PL\_\-WI\_\-Window.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Platform/Window/PL\_\-WI\_\-Window.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{classMapPtr}{
+\section{MapPtr$<$ T $>$ Class Template Reference}
+\label{classMapPtr}\index{MapPtr@{MapPtr}}
+}
+
+
+auto-\/incremented integer-\/index map  
+
+
+{\ttfamily \#include $<$MapPtr.h$>$}Inheritance diagram for MapPtr$<$ T $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5cm]{classMapPtr}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMapPtr_aa7cb53d536d442c005d3605074cb11b0}{
+typedef void(T::$\ast$ \hyperlink{classMapPtr_aa7cb53d536d442c005d3605074cb11b0}{memFun1} )()}
+\label{classMapPtr_aa7cb53d536d442c005d3605074cb11b0}
+
+\begin{DoxyCompactList}\small\item\em member function \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_a51ffcd92e3106c7fca3bbc14c9a62187}{
+typedef void(T::$\ast$ \hyperlink{classMapPtr_a51ffcd92e3106c7fca3bbc14c9a62187}{memFun2} )(\hyperlink{structVoid}{Void} $\ast$)}
+\label{classMapPtr_a51ffcd92e3106c7fca3bbc14c9a62187}
+
+\begin{DoxyCompactList}\small\item\em member function \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMapPtr_af05df5f43282ad0e3b857e7b0e0cfa16}{
+\hyperlink{classMapPtr_af05df5f43282ad0e3b857e7b0e0cfa16}{MapPtr} ()}
+\label{classMapPtr_af05df5f43282ad0e3b857e7b0e0cfa16}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_ac23f3b91e42cdee8b6ccd7f88d141afd}{
+\hyperlink{classMapPtr_ac23f3b91e42cdee8b6ccd7f88d141afd}{$\sim$MapPtr} ()}
+\label{classMapPtr_ac23f3b91e42cdee8b6ccd7f88d141afd}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_ab21306887abd5920656d73e95ccace12}{
+void \hyperlink{classMapPtr_ab21306887abd5920656d73e95ccace12}{For} (\hyperlink{classMapPtr_aa7cb53d536d442c005d3605074cb11b0}{memFun1} f)}
+\label{classMapPtr_ab21306887abd5920656d73e95ccace12}
+
+\begin{DoxyCompactList}\small\item\em For. \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_a062ad7a5c0af3a66c7e59bad2cd08ed6}{
+void \hyperlink{classMapPtr_a062ad7a5c0af3a66c7e59bad2cd08ed6}{For} (\hyperlink{classMapPtr_a51ffcd92e3106c7fca3bbc14c9a62187}{memFun2} f, \hyperlink{structVoid}{Void} $\ast$data)}
+\label{classMapPtr_a062ad7a5c0af3a66c7e59bad2cd08ed6}
+
+\begin{DoxyCompactList}\small\item\em For. \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_aa339204600c908a0dc2c6c73b9480d0b}{
+{\footnotesize template$<$class U $>$ }\\void \hyperlink{classMapPtr_aa339204600c908a0dc2c6c73b9480d0b}{Create} (U $\ast$\&)}
+\label{classMapPtr_aa339204600c908a0dc2c6c73b9480d0b}
+
+\begin{DoxyCompactList}\small\item\em push a new object into map \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_a8d547c988e5e4d4784f3344164adede7}{
+T $\ast$ \hyperlink{classMapPtr_a8d547c988e5e4d4784f3344164adede7}{Find} (int)}
+\label{classMapPtr_a8d547c988e5e4d4784f3344164adede7}
+
+\begin{DoxyCompactList}\small\item\em find an index and return the object \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_ab4e0ff3976f38802878fc819ba1bd6c0}{
+void \hyperlink{classMapPtr_ab4e0ff3976f38802878fc819ba1bd6c0}{Erase} (int)}
+\label{classMapPtr_ab4e0ff3976f38802878fc819ba1bd6c0}
+
+\begin{DoxyCompactList}\small\item\em Erase. \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_a3ab8a723fc90b518a9fb9b47a17d6716}{
+void \hyperlink{classMapPtr_a3ab8a723fc90b518a9fb9b47a17d6716}{Clear} ()}
+\label{classMapPtr_a3ab8a723fc90b518a9fb9b47a17d6716}
+
+\begin{DoxyCompactList}\small\item\em clear all objects \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMapPtr_a677d1231f7a8bddff44c72219543193c}{
+int \hyperlink{classMapPtr_a677d1231f7a8bddff44c72219543193c}{m\_\-next}}
+\label{classMapPtr_a677d1231f7a8bddff44c72219543193c}
+
+\begin{DoxyCompactList}\small\item\em counter \item\end{DoxyCompactList}\item 
+\hypertarget{classMapPtr_a1149debec7d2589d3ab5c49bf179e0e5}{
+std::map$<$ int, T $\ast$ $>$ \hyperlink{classMapPtr_a1149debec7d2589d3ab5c49bf179e0e5}{m\_\-map}}
+\label{classMapPtr_a1149debec7d2589d3ab5c49bf179e0e5}
+
+\begin{DoxyCompactList}\small\item\em map \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$ class MapPtr$<$ T $>$}
+
+auto-\/incremented integer-\/index map 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Core/MapPtr.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Core/MapPtr.cpp\end{DoxyCompactItemize}

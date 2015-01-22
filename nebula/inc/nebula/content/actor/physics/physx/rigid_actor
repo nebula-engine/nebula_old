@@ -1,0 +1,88 @@
+#ifndef _ACTOR_PHYSICS_PHYSX_RIGID_ACTOR_H
+#define _ACTOR_PHYSICS_PHYSX_RIGID_ACTOR_H
+
+#include <map>
+
+#include <core/Core.h>
+#include <utilities/Types/Utilities.h>
+
+#include <content/Actor/Physics/CO_AC_PH_RigidActor.h>
+#include <content/Actor/Physics/PhysX/CO_AC_PH_PX_Actor.h>
+
+using namespace std;
+
+namespace Content {
+	namespace Actor {
+		namespace Physics {
+			namespace PhysX {
+				/// %PhysX %RigidActor
+				class RigidActor: public virtual CO_AC_PH_RigidActor, virtual public CO_AC_PH_PX_Actor {
+				public:
+					/// Constructor
+														RigidActor();
+					/// Destructor
+														~RigidActor();
+
+					///@name Standard Functions
+					///@{
+					/// Initialize
+					virtual	void						VInit( Void* data );
+					/// ShutDown
+					virtual void						VShutDown();
+					/// Update
+					virtual void						VUpdate();
+					/// Step
+					virtual	void						VStep( Void* );
+					///@}
+					
+					
+
+
+					
+
+				protected:
+					///@name Maps
+					///@{
+					
+					///@}
+				};
+			};
+		};
+	};
+};
+
+/*
+/// functionoid to render shapes
+class Funct_Shape_Render: public Funct<CO_SH_AD_Shape,CO_AC_AD_RigidActor> {
+public:
+	/// Constructor
+			Funct_Shape_Render( CO_AC_AD_RigidActor* rigidActor, Platform::Renderer::Renderer* render ): Funct<CO_SH_AD_Shape,CO_AC_AD_RigidActor>(rigidActor), m_render(render) {}
+	/// doit
+	void	doit( CO_SH_AD_Shape* shape );
+
+	/// renderer
+	Platform::Renderer::Renderer*	m_render;
+};
+*/
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

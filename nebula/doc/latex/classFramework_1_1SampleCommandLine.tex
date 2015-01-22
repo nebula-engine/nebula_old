@@ -1,0 +1,91 @@
+\hypertarget{classFramework_1_1SampleCommandLine}{
+\section{Framework::SampleCommandLine Class Reference}
+\label{classFramework_1_1SampleCommandLine}\index{Framework::SampleCommandLine@{Framework::SampleCommandLine}}
+}
+
+
+{\ttfamily \#include $<$CommandLine.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1SampleCommandLine_ab6ac9f93ae4115f2352c196ede40fb22}{
+\hyperlink{classFramework_1_1SampleCommandLine_ab6ac9f93ae4115f2352c196ede40fb22}{SampleCommandLine} (unsigned int argc, const char $\ast$const $\ast$argv)}
+\label{classFramework_1_1SampleCommandLine_ab6ac9f93ae4115f2352c196ede40fb22}
+
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a4cc6fd8e20072dcb181473ca4748da44}{
+\hyperlink{classFramework_1_1SampleCommandLine_a4cc6fd8e20072dcb181473ca4748da44}{SampleCommandLine} (const char $\ast$args)}
+\label{classFramework_1_1SampleCommandLine_a4cc6fd8e20072dcb181473ca4748da44}
+
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a7f1921560f4832e5390463dd9f2e00dd}{
+\hyperlink{classFramework_1_1SampleCommandLine_a7f1921560f4832e5390463dd9f2e00dd}{$\sim$SampleCommandLine} (void)}
+\label{classFramework_1_1SampleCommandLine_a7f1921560f4832e5390463dd9f2e00dd}
+
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+bool \hyperlink{classFramework_1_1SampleCommandLine_ae49e4180a596d53ef291243ee9c77aed}{hasSwitch} (const char $\ast$s, const unsigned int argNum=invalidArgNum) const 
+\item 
+const char $\ast$ \hyperlink{classFramework_1_1SampleCommandLine_ae594ca031cedf3693eef6ba3ca1c5f04}{getValue} (const char $\ast$s, unsigned int argNum=invalidArgNum) const 
+\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a90bf6af8621b98c69f9bab3e36fc8556}{
+unsigned int \hyperlink{classFramework_1_1SampleCommandLine_a90bf6af8621b98c69f9bab3e36fc8556}{getNumArgs} (void) const }
+\label{classFramework_1_1SampleCommandLine_a90bf6af8621b98c69f9bab3e36fc8556}
+
+\begin{DoxyCompactList}\small\item\em return how many command line arguments there are \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a0cbe42e047c5288bd8216b3a08f4562c}{
+const char $\ast$ \hyperlink{classFramework_1_1SampleCommandLine_a0cbe42e047c5288bd8216b3a08f4562c}{getProgramName} (void) const }
+\label{classFramework_1_1SampleCommandLine_a0cbe42e047c5288bd8216b3a08f4562c}
+
+\begin{DoxyCompactList}\small\item\em what is the program name \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_ab7c97bee798caf333a384df94b0e0574}{
+unsigned int \hyperlink{classFramework_1_1SampleCommandLine_ab7c97bee798caf333a384df94b0e0574}{unusedArgsBufSize} (void) const }
+\label{classFramework_1_1SampleCommandLine_ab7c97bee798caf333a384df94b0e0574}
+
+\begin{DoxyCompactList}\small\item\em get the string that contains the unsued args \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a3a2d5e91756e53b04648314f30d75548}{
+const char $\ast$ \hyperlink{classFramework_1_1SampleCommandLine_a3a2d5e91756e53b04648314f30d75548}{getUnusedArgs} (char $\ast$buf, unsigned int bufSize) const }
+\label{classFramework_1_1SampleCommandLine_a3a2d5e91756e53b04648314f30d75548}
+
+\begin{DoxyCompactList}\small\item\em get the string that contains the unsued args \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_ac57ee04719e974cbc1dcd939d05e8bae}{
+bool \hyperlink{classFramework_1_1SampleCommandLine_ac57ee04719e974cbc1dcd939d05e8bae}{isCommand} (const char $\ast$s) const }
+\label{classFramework_1_1SampleCommandLine_ac57ee04719e974cbc1dcd939d05e8bae}
+
+\begin{DoxyCompactList}\small\item\em ! if the first argument is the given command. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classFramework_1_1SampleCommandLine_a13ab8af52edd8fa4c7e52c2fd90aa0d8}{getCommand} (void) const 
+\item 
+\hypertarget{classFramework_1_1SampleCommandLine_aa33e91b4aedc886fa1d8f617a1cc1223}{
+unsigned int \hyperlink{classFramework_1_1SampleCommandLine_aa33e91b4aedc886fa1d8f617a1cc1223}{getArgC} (void) const }
+\label{classFramework_1_1SampleCommandLine_aa33e91b4aedc886fa1d8f617a1cc1223}
+
+\begin{DoxyCompactList}\small\item\em ! get the raw command-\/line argument list... \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1SampleCommandLine_a5955d2529cf83a9237f5e1a82d44560a}{
+const char $\ast$const $\ast$ \hyperlink{classFramework_1_1SampleCommandLine_a5955d2529cf83a9237f5e1a82d44560a}{getArgV} (void) const }
+\label{classFramework_1_1SampleCommandLine_a5955d2529cf83a9237f5e1a82d44560a}
+
+\begin{DoxyCompactList}\small\item\em ! get the raw command-\/line argument list... \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for command-\/line arguments. This class assumes argument 0 is always the executable path! 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFramework_1_1SampleCommandLine_a13ab8af52edd8fa4c7e52c2fd90aa0d8}{
+\index{Framework::SampleCommandLine@{Framework::SampleCommandLine}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!Framework::SampleCommandLine@{Framework::SampleCommandLine}}
+\subsubsection[{getCommand}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Framework::SampleCommandLine::getCommand (void) const}}
+\label{classFramework_1_1SampleCommandLine_a13ab8af52edd8fa4c7e52c2fd90aa0d8}
+! get the first argument assuming it isn't a switch. e.g. for the command-\/line \char`\"{}myapp.exe editor -\/foo\char`\"{} it will return \char`\"{}editor\char`\"{}. \hypertarget{classFramework_1_1SampleCommandLine_ae594ca031cedf3693eef6ba3ca1c5f04}{
+\index{Framework::SampleCommandLine@{Framework::SampleCommandLine}!getValue@{getValue}}
+\index{getValue@{getValue}!Framework::SampleCommandLine@{Framework::SampleCommandLine}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Framework::SampleCommandLine::getValue (const char $\ast$ {\em s}, \/  unsigned int {\em argNum} = {\ttfamily invalidArgNum}) const}}
+\label{classFramework_1_1SampleCommandLine_ae594ca031cedf3693eef6ba3ca1c5f04}
+! gets the value of a switch... e.g. s=\char`\"{}foo\char`\"{} returns \char`\"{}bar\char`\"{} if '-\/foo=bar' is in the commandline. \hypertarget{classFramework_1_1SampleCommandLine_ae49e4180a596d53ef291243ee9c77aed}{
+\index{Framework::SampleCommandLine@{Framework::SampleCommandLine}!hasSwitch@{hasSwitch}}
+\index{hasSwitch@{hasSwitch}!Framework::SampleCommandLine@{Framework::SampleCommandLine}}
+\subsubsection[{hasSwitch}]{\setlength{\rightskip}{0pt plus 5cm}bool Framework::SampleCommandLine::hasSwitch (const char $\ast$ {\em s}, \/  const unsigned int {\em argNum} = {\ttfamily invalidArgNum}) const}}
+\label{classFramework_1_1SampleCommandLine_ae49e4180a596d53ef291243ee9c77aed}
+! has a given command-\/line switch? e.g. s==\char`\"{}foo\char`\"{} checks for -\/foo 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Framework/CommandLine.h\end{DoxyCompactItemize}

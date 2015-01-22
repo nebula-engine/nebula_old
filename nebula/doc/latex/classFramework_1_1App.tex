@@ -1,0 +1,133 @@
+\hypertarget{classFramework_1_1App}{
+\section{Framework::App Class Reference}
+\label{classFramework_1_1App}\index{Framework::App@{Framework::App}}
+}
+
+
+The base class for the engine.  
+
+
+{\ttfamily \#include $<$FR\_\-App.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1App_a5f7d9ef4ad19c6d40bce28af2af36139}{
+\hyperlink{classFramework_1_1App_a5f7d9ef4ad19c6d40bce28af2af36139}{App} ()}
+\label{classFramework_1_1App_a5f7d9ef4ad19c6d40bce28af2af36139}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1App_aad88a2ecb9c2be306cf0a609d9d83a09}{
+\hyperlink{classFramework_1_1App_aad88a2ecb9c2be306cf0a609d9d83a09}{App} (int argc, char $\ast$$\ast$argv)}
+\label{classFramework_1_1App_aad88a2ecb9c2be306cf0a609d9d83a09}
+
+\begin{DoxyCompactList}\small\item\em Constructor with command line arguments. \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1App_acbbcd57583869ac1a15cec2b522e4c37}{
+\hyperlink{classFramework_1_1App_acbbcd57583869ac1a15cec2b522e4c37}{$\sim$App} ()}
+\label{classFramework_1_1App_acbbcd57583869ac1a15cec2b522e4c37}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Fetch objects}\par
+{\em \label{_amgrp3c854b4b8917696ee3112e6c72a3b2ad}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1App_af821ad87109e0077c144c5a2f5d2b933}{
+\hyperlink{classContent_1_1Content}{CO\_\-Content} $\ast$ {\bfseries GetContent} () const }
+\label{classFramework_1_1App_af821ad87109e0077c144c5a2f5d2b933}
+
+\item 
+\hypertarget{classFramework_1_1App_a7394060da20bff136ca98c6307afbf47}{
+\hyperlink{classNetwork}{Network} $\ast$ {\bfseries GetNetwork} () const }
+\label{classFramework_1_1App_a7394060da20bff136ca98c6307afbf47}
+
+\item 
+\hypertarget{classFramework_1_1App_a4c9f8af5d1bbf5a96481cc4b4b512b66}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform}{PL\_\-PL\_\-Platform} $\ast$ {\bfseries GetPlatform} () const }
+\label{classFramework_1_1App_a4c9f8af5d1bbf5a96481cc4b4b512b66}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Initialization and ShutDown}\par
+{\em \label{_amgrp2a8ba145c14f2dcb11ba0fe271240078}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1App_ae3175c55a4796e96383062e93647ad8e}{
+virtual void \hyperlink{classFramework_1_1App_ae3175c55a4796e96383062e93647ad8e}{VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)}
+\label{classFramework_1_1App_ae3175c55a4796e96383062e93647ad8e}
+
+\begin{DoxyCompactList}\small\item\em Initialize. \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1App_a39a0de46f9dfb245b4f9d03ef724a08c}{
+virtual void \hyperlink{classFramework_1_1App_a39a0de46f9dfb245b4f9d03ef724a08c}{VShutDown} ()}
+\label{classFramework_1_1App_a39a0de46f9dfb245b4f9d03ef724a08c}
+
+\begin{DoxyCompactList}\small\item\em ShutDown. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Main Loop}\par
+{\em \label{_amgrpa020c38c77b28e0fd0c9b30618131f8a}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1App_ab0f96d25c035b72e8a6e7bac442622d3}{
+void \hyperlink{classFramework_1_1App_ab0f96d25c035b72e8a6e7bac442622d3}{MainLoopSequ} ()}
+\label{classFramework_1_1App_ab0f96d25c035b72e8a6e7bac442622d3}
+
+\begin{DoxyCompactList}\small\item\em Sequential Main Loop. \item\end{DoxyCompactList}\item 
+\hypertarget{classFramework_1_1App_aa5c8c43efe88f1768e18934f47da34eb}{
+void \hyperlink{classFramework_1_1App_aa5c8c43efe88f1768e18934f47da34eb}{MainLoopMulti} ()}
+\label{classFramework_1_1App_aa5c8c43efe88f1768e18934f47da34eb}
+
+\begin{DoxyCompactList}\small\item\em Multi-\/threaded Main Loop. \item\end{DoxyCompactList}\item 
+void \hyperlink{classFramework_1_1App_a447b94ab64716262b7eb8e0e89a8b906}{ContinueLoopSequ} ()
+\begin{DoxyCompactList}\small\item\em Sequential loop body. \item\end{DoxyCompactList}\item 
+void \hyperlink{classFramework_1_1App_a461233c52431769604fcf89a8a2fa4bc}{ContinueLoopMulti} ()
+\begin{DoxyCompactList}\small\item\em Multi-\/threaded loop body. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{Indent}{\bf Children}\par
+{\em \label{_amgrp64e4aca4297806247f62a7b5f8cbd3df}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFramework_1_1App_a79d0c566e84ab31e22d0cec1e75f75d8}{
+\hyperlink{classContent_1_1Content}{CO\_\-Content} $\ast$ {\bfseries m\_\-content}}
+\label{classFramework_1_1App_a79d0c566e84ab31e22d0cec1e75f75d8}
+
+\item 
+\hypertarget{classFramework_1_1App_a3e14a3ffd0c1bbf31f077e8b21e0c948}{
+\hyperlink{classNetwork}{Network} $\ast$ {\bfseries m\_\-network}}
+\label{classFramework_1_1App_a3e14a3ffd0c1bbf31f077e8b21e0c948}
+
+\item 
+\hypertarget{classFramework_1_1App_a13431973832c140740a60a689e117da5}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform}{PL\_\-PL\_\-Platform} $\ast$ {\bfseries m\_\-platform}}
+\label{classFramework_1_1App_a13431973832c140740a60a689e117da5}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The base class for the engine. \hyperlink{classFramework_1_1App}{App} is the base class for the engine. An end-\/use application shall derive a class from \hyperlink{classFramework_1_1App}{App}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFramework_1_1App_a461233c52431769604fcf89a8a2fa4bc}{
+\index{Framework::App@{Framework::App}!ContinueLoopMulti@{ContinueLoopMulti}}
+\index{ContinueLoopMulti@{ContinueLoopMulti}!Framework::App@{Framework::App}}
+\subsubsection[{ContinueLoopMulti}]{\setlength{\rightskip}{0pt plus 5cm}void FR\_\-App::ContinueLoopMulti ()}}
+\label{classFramework_1_1App_a461233c52431769604fcf89a8a2fa4bc}
+
+
+Multi-\/threaded loop body. 
+\begin{DoxyItemize}
+\item There is no loop
+\item Modules are updated simulataneously on multiple threads with appropriate sync points and resource managament.
+\item Threads are released upon application launch and each use their own sequential loop to handle changing conditions and perform repetative tasks. 
+\end{DoxyItemize}\hypertarget{classFramework_1_1App_a447b94ab64716262b7eb8e0e89a8b906}{
+\index{Framework::App@{Framework::App}!ContinueLoopSequ@{ContinueLoopSequ}}
+\index{ContinueLoopSequ@{ContinueLoopSequ}!Framework::App@{Framework::App}}
+\subsubsection[{ContinueLoopSequ}]{\setlength{\rightskip}{0pt plus 5cm}void FR\_\-App::ContinueLoopSequ ()}}
+\label{classFramework_1_1App_a447b94ab64716262b7eb8e0e89a8b906}
+
+
+Sequential loop body. Objects are updated sequentially each execution of the loop. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Framework/FR\_\-App.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Framework/FR\_\-App.cpp\end{DoxyCompactItemize}

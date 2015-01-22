@@ -1,0 +1,130 @@
+\hypertarget{classPlatform_1_1Platform_1_1Platform}{
+\section{Platform::Platform::Platform Class Reference}
+\label{classPlatform_1_1Platform_1_1Platform}\index{Platform::Platform::Platform@{Platform::Platform::Platform}}
+}
+
+
+Platform  
+
+
+{\ttfamily \#include $<$PL\_\-PL\_\-Platform.h$>$}Inheritance diagram for Platform::Platform::Platform::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classPlatform_1_1Platform_1_1Platform}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPlatform_1_1Platform_1_1Platform_1_1Event}{Event}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structPlatform_1_1Platform_1_1Platform_1_1Event}{Event}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_ab3ce518df224baed0295ff22b0c34527}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform_ab3ce518df224baed0295ff22b0c34527}{Platform} ()}
+\label{classPlatform_1_1Platform_1_1Platform_ab3ce518df224baed0295ff22b0c34527}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a12d7f6c412b2d1191bf95dee167b7b06}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform_a12d7f6c412b2d1191bf95dee167b7b06}{$\sim$Platform} ()}
+\label{classPlatform_1_1Platform_1_1Platform_a12d7f6c412b2d1191bf95dee167b7b06}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a016830a5cc2fa3e6a94d3e9f325e03e3}{
+virtual void \hyperlink{classPlatform_1_1Platform_1_1Platform_a016830a5cc2fa3e6a94d3e9f325e03e3}{VCreateWindow} (\hyperlink{classPlatform_1_1Window_1_1Window}{PL\_\-WI\_\-Window} $\ast$\&window)}
+\label{classPlatform_1_1Platform_1_1Platform_a016830a5cc2fa3e6a94d3e9f325e03e3}
+
+\begin{DoxyCompactList}\small\item\em Create Window. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_aed8eba9dd001327dd374065de8a7bab0}{
+virtual void \hyperlink{classPlatform_1_1Platform_1_1Platform_aed8eba9dd001327dd374065de8a7bab0}{VDeleteWindow} (int windowNo)}
+\label{classPlatform_1_1Platform_1_1Platform_aed8eba9dd001327dd374065de8a7bab0}
+
+\begin{DoxyCompactList}\small\item\em Delete Window. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a7f1cc19b6b23ad74c46993c12c5cb266}{
+void \hyperlink{classPlatform_1_1Platform_1_1Platform_a7f1cc19b6b23ad74c46993c12c5cb266}{UpdateWindow} (\hyperlink{classPlatform_1_1Window_1_1Window}{PL\_\-WI\_\-Window} $\ast$window)}
+\label{classPlatform_1_1Platform_1_1Platform_a7f1cc19b6b23ad74c46993c12c5cb266}
+
+\begin{DoxyCompactList}\small\item\em update window \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a3afcc114f22a2e18ac9aa3c55a2d6304}{
+void \hyperlink{classPlatform_1_1Platform_1_1Platform_a3afcc114f22a2e18ac9aa3c55a2d6304}{UpdateWindow\_\-For} ()}
+\label{classPlatform_1_1Platform_1_1Platform_a3afcc114f22a2e18ac9aa3c55a2d6304}
+
+\begin{DoxyCompactList}\small\item\em update windows \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_aff3419631c48b1c3bd313675d4eb76a8}{
+void \hyperlink{classPlatform_1_1Platform_1_1Platform_aff3419631c48b1c3bd313675d4eb76a8}{Process} (\hyperlink{structFramework_1_1Communication_1_1Message_1_1Message}{FR\_\-COM\_\-MSG\_\-Message} $\ast$message)}
+\label{classPlatform_1_1Platform_1_1Platform_aff3419631c48b1c3bd313675d4eb76a8}
+
+\begin{DoxyCompactList}\small\item\em IComm Process \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a0b32ba2137b32e6531125ec4cff96aa7}{
+void {\bfseries ProcessEvent} (UINT eventType, \hyperlink{structFramework_1_1Communication_1_1Message_1_1Message}{FR\_\-COM\_\-MSG\_\-Message} $\ast$msg)}
+\label{classPlatform_1_1Platform_1_1Platform_a0b32ba2137b32e6531125ec4cff96aa7}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf fetch objects}\par
+{\em \label{_amgrpb712734d7b6a37d417e36727149b52a3}
+ window }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a861720c5282be3fabb33663ac0bf0af5}{
+\hyperlink{classPlatform_1_1Window_1_1Window}{PL\_\-WI\_\-Window} $\ast$ {\bfseries GetWindow} (int a)}
+\label{classPlatform_1_1Platform_1_1Platform_a861720c5282be3fabb33663ac0bf0af5}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf standard functions}\par
+{\em \label{_amgrp57f1c50bd31a278c7d9f58b3e669c84c}
+ initialize }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a14c2dafce42e067a9e0607b6affe140a}{
+virtual void {\bfseries VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)}
+\label{classPlatform_1_1Platform_1_1Platform_a14c2dafce42e067a9e0607b6affe140a}
+
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a9119d58ec258162592c8a9464bd56e93}{
+virtual void \hyperlink{classPlatform_1_1Platform_1_1Platform_a9119d58ec258162592c8a9464bd56e93}{VShutDown} ()}
+\label{classPlatform_1_1Platform_1_1Platform_a9119d58ec258162592c8a9464bd56e93}
+
+\begin{DoxyCompactList}\small\item\em shutdown \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_abbbf16cfc70749d357c56e56758ffded}{
+virtual void \hyperlink{classPlatform_1_1Platform_1_1Platform_abbbf16cfc70749d357c56e56758ffded}{VUpdate} ()}
+\label{classPlatform_1_1Platform_1_1Platform_abbbf16cfc70749d357c56e56758ffded}
+
+\begin{DoxyCompactList}\small\item\em update \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_a87cb552291e931979b3580ead896a089}{
+\hyperlink{classFramework_1_1App}{FR\_\-App} $\ast$ \hyperlink{classPlatform_1_1Platform_1_1Platform_a87cb552291e931979b3580ead896a089}{m\_\-app}}
+\label{classPlatform_1_1Platform_1_1Platform_a87cb552291e931979b3580ead896a089}
+
+\begin{DoxyCompactList}\small\item\em app \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_aaf80c4e67d7f0bccc8d47d8a9a14a30f}{
+map$<$ UINT, UINT $>$ \hyperlink{classPlatform_1_1Platform_1_1Platform_aaf80c4e67d7f0bccc8d47d8a9a14a30f}{m\_\-keyUp}}
+\label{classPlatform_1_1Platform_1_1Platform_aaf80c4e67d7f0bccc8d47d8a9a14a30f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structPlatform_1_1Platform_1_1Platform_1_1Event}{Event} Map. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_afe5476cddf1a3df05137c43dc2db2bc4}{
+map$<$ UINT, UINT $>$ {\bfseries m\_\-keyDown}}
+\label{classPlatform_1_1Platform_1_1Platform_afe5476cddf1a3df05137c43dc2db2bc4}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf maps}\par
+{\em \label{_amgrp7e94476d62556cc8501e3df5b8d6470d}
+ window }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Platform_1_1Platform_ac7e4884eaa743199a7ec64da2d24c95c}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classPlatform_1_1Window_1_1Window}{PL\_\-WI\_\-Window} $>$ {\bfseries m\_\-window}}
+\label{classPlatform_1_1Platform_1_1Platform_ac7e4884eaa743199a7ec64da2d24c95c}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Platform 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Platform/Platform/PL\_\-PL\_\-Platform.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Platform/Platform/PL\_\-PL\_\-Platform.cpp\end{DoxyCompactItemize}

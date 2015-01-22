@@ -1,0 +1,45 @@
+\hypertarget{classViewHuman}{
+\section{ViewHuman Class Reference}
+\label{classViewHuman}\index{ViewHuman@{ViewHuman}}
+}
+Inheritance diagram for ViewHuman::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classViewHuman}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classViewHuman_adfc8ef83823973906a86108130138474}{Initialize} (weak\_\-ptr$<$ ::\hyperlink{classFramework_1_1App}{Framework::App} $>$ app)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classViewHuman_adfc8ef83823973906a86108130138474}{
+\index{ViewHuman@{ViewHuman}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ViewHuman@{ViewHuman}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}int ViewHuman::Initialize (weak\_\-ptr$<$ ::{\bf Framework::App} $>$ {\em app})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classViewHuman_adfc8ef83823973906a86108130138474}
+
+
+shared\_\-ptr$<$App$>$ sp\_\-app = m\_\-app.lock(); if ( !sp\_\-app ) printf(\char`\"{}\%s:\%i: bad$\backslash$n\char`\"{},\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-);
+
+m\_\-window = shared\_\-ptr$<$Platform::Window$>$( new Platform::Window );
+
+shared\_\-ptr$<$Platform::Platform$>$ plat = sp\_\-app-\/$>$GetPlatform(); if ( !plat ) printf(\char`\"{}\%s:\%i: bad$\backslash$n\char`\"{},\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-);
+
+shared\_\-ptr$<$Platform::Display$>$ disp = sp\_\-app-\/$>$GetPlatform()-\/$>$GetDisplay(); if ( !disp ) printf(\char`\"{}\%s:\%i: bad$\backslash$n\char`\"{},\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-);
+
+disp-\/$>$CreateWindow( m\_\-window );
+
+if ( m\_\-window.expired() ) \{
+
+\}
+
+Reimplemented from \hyperlink{classView}{View}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/ViewHuman.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/ViewHuman.cpp\end{DoxyCompactItemize}

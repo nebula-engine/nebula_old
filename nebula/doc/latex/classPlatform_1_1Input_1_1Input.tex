@@ -1,0 +1,143 @@
+\hypertarget{classPlatform_1_1Input_1_1Input}{
+\section{Platform::Input::Input Class Reference}
+\label{classPlatform_1_1Input_1_1Input}\index{Platform::Input::Input@{Platform::Input::Input}}
+}
+
+
+input  
+
+
+{\ttfamily \#include $<$PI\_\-IN\_\-Input.h$>$}Inheritance diagram for Platform::Input::Input::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classPlatform_1_1Input_1_1Input}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a6e57061136f709a0533e6c045c5d29ec}{
+void \hyperlink{classPlatform_1_1Input_1_1Input_a6e57061136f709a0533e6c045c5d29ec}{SetMouseMoveReceiver} (\hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest}{FR\_\-COM\_\-MSG\_\-Dest} \&dest)}
+\label{classPlatform_1_1Input_1_1Input_a6e57061136f709a0533e6c045c5d29ec}
+
+\begin{DoxyCompactList}\small\item\em set \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_afce3cd8258cde3b4ea52e33367e7bb5d}{
+void \hyperlink{classPlatform_1_1Input_1_1Input_afce3cd8258cde3b4ea52e33367e7bb5d}{Send} (\hyperlink{structFramework_1_1Communication_1_1Message_1_1Message}{FR\_\-COM\_\-MSG\_\-Message} $\ast$msg)}
+\label{classPlatform_1_1Input_1_1Input_afce3cd8258cde3b4ea52e33367e7bb5d}
+
+\begin{DoxyCompactList}\small\item\em Send Message. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlatform_1_1Input_1_1Input_afa32146b371e45509eef59474e6b0ef2}{Input} ()
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a423a707a8ddd10b8335a874ab5d0ae21}{
+virtual \hyperlink{classPlatform_1_1Input_1_1Input_a423a707a8ddd10b8335a874ab5d0ae21}{$\sim$Input} ()}
+\label{classPlatform_1_1Input_1_1Input_a423a707a8ddd10b8335a874ab5d0ae21}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlatform_1_1Input_1_1Input_afd31cd2634d8f44441ac04fd2b2baf3a}{VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a08bfcc36f6777059e4767d81abaaeed3}{
+virtual void \hyperlink{classPlatform_1_1Input_1_1Input_a08bfcc36f6777059e4767d81abaaeed3}{VShutDown} ()}
+\label{classPlatform_1_1Input_1_1Input_a08bfcc36f6777059e4767d81abaaeed3}
+
+\begin{DoxyCompactList}\small\item\em shutdown \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a9410b441300da4b8c0378eedf0f4e182}{
+virtual void \hyperlink{classPlatform_1_1Input_1_1Input_a9410b441300da4b8c0378eedf0f4e182}{VUpdate} ()}
+\label{classPlatform_1_1Input_1_1Input_a9410b441300da4b8c0378eedf0f4e182}
+
+\begin{DoxyCompactList}\small\item\em update \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Event}\par
+{\em \label{_amgrpa4ecfc70574394990cf17bd83df499f7}
+ \hyperlink{structPlatform_1_1Input_1_1Key}{Key} Up }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_aaa4710a78618fc48f52d121ae93301fa}{
+virtual void {\bfseries VKeyUp} (int key, int windowNo)}
+\label{classPlatform_1_1Input_1_1Input_aaa4710a78618fc48f52d121ae93301fa}
+
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a37ca3683d6f84d521b4ded7f438ba268}{
+virtual void \hyperlink{classPlatform_1_1Input_1_1Input_a37ca3683d6f84d521b4ded7f438ba268}{VKeyDown} (int key, int windowNo)}
+\label{classPlatform_1_1Input_1_1Input_a37ca3683d6f84d521b4ded7f438ba268}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structPlatform_1_1Input_1_1Key}{Key} Down. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_af345cc254cae171098d6b06136dd796c}{
+virtual void \hyperlink{classPlatform_1_1Input_1_1Input_af345cc254cae171098d6b06136dd796c}{VMouseMove} (int x, int y)}
+\label{classPlatform_1_1Input_1_1Input_af345cc254cae171098d6b06136dd796c}
+
+\begin{DoxyCompactList}\small\item\em Mouse Move. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a992c394546b9c6df860bd770cce4a902}{
+\hyperlink{classFramework_1_1App}{FR\_\-App} $\ast$ \hyperlink{classPlatform_1_1Input_1_1Input_a992c394546b9c6df860bd770cce4a902}{m\_\-app}}
+\label{classPlatform_1_1Input_1_1Input_a992c394546b9c6df860bd770cce4a902}
+
+\begin{DoxyCompactList}\small\item\em app \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a9ee29a227fdc277ff2197b6d86fbe963}{
+\hyperlink{classPlatform_1_1Platform_1_1Platform}{PL\_\-PL\_\-Platform} $\ast$ \hyperlink{classPlatform_1_1Input_1_1Input_a9ee29a227fdc277ff2197b6d86fbe963}{m\_\-platform}}
+\label{classPlatform_1_1Input_1_1Input_a9ee29a227fdc277ff2197b6d86fbe963}
+
+\begin{DoxyCompactList}\small\item\em Platform \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_ad22b3cbd6768411e39342f60dd8f61b7}{
+\hyperlink{classPlatform_1_1Window_1_1Window}{PL\_\-WI\_\-Window} $\ast$ \hyperlink{classPlatform_1_1Input_1_1Input_ad22b3cbd6768411e39342f60dd8f61b7}{m\_\-window}}
+\label{classPlatform_1_1Input_1_1Input_ad22b3cbd6768411e39342f60dd8f61b7}
+
+\begin{DoxyCompactList}\small\item\em Window \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_ad50cf4ca5fdf2d8f7e19432e975c4e1a}{
+\hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest}{FR\_\-COM\_\-MSG\_\-Dest} \hyperlink{classPlatform_1_1Input_1_1Input_ad50cf4ca5fdf2d8f7e19432e975c4e1a}{m\_\-mouse\_\-move\_\-receiver}}
+\label{classPlatform_1_1Input_1_1Input_ad50cf4ca5fdf2d8f7e19432e975c4e1a}
+
+\begin{DoxyCompactList}\small\item\em Mouse Move. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a5682edc61a54b8f2e5394fb3252bcd90}{
+\hyperlink{classFramework_1_1Communication_1_1IComm}{FR\_\-COM\_\-IComm} $\ast$ \hyperlink{classPlatform_1_1Input_1_1Input_a5682edc61a54b8f2e5394fb3252bcd90}{m\_\-icomm}}
+\label{classPlatform_1_1Input_1_1Input_a5682edc61a54b8f2e5394fb3252bcd90}
+
+\begin{DoxyCompactList}\small\item\em Default. \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a132d2b635dfe1cc7077e7f46cd8baa9d}{
+map$<$ UINT, \hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest}{FR\_\-COM\_\-MSG\_\-Dest} $>$ \hyperlink{classPlatform_1_1Input_1_1Input_a132d2b635dfe1cc7077e7f46cd8baa9d}{m\_\-keyUpRouter}}
+\label{classPlatform_1_1Input_1_1Input_a132d2b635dfe1cc7077e7f46cd8baa9d}
+
+\begin{DoxyCompactList}\small\item\em Key Up Router \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Input_1_1Input_a544ee53291c8ca29bbe88534f208ba56}{
+map$<$ UINT, \hyperlink{structFramework_1_1Communication_1_1Message_1_1Dest}{FR\_\-COM\_\-MSG\_\-Dest} $>$ \hyperlink{classPlatform_1_1Input_1_1Input_a544ee53291c8ca29bbe88534f208ba56}{m\_\-keyDownRouter}}
+\label{classPlatform_1_1Input_1_1Input_a544ee53291c8ca29bbe88534f208ba56}
+
+\begin{DoxyCompactList}\small\item\em Key Down Router \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+input 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlatform_1_1Input_1_1Input_afa32146b371e45509eef59474e6b0ef2}{
+\index{Platform::Input::Input@{Platform::Input::Input}!Input@{Input}}
+\index{Input@{Input}!Platform::Input::Input@{Platform::Input::Input}}
+\subsubsection[{Input}]{\setlength{\rightskip}{0pt plus 5cm}PL\_\-IN\_\-Input::Input ()}}
+\label{classPlatform_1_1Input_1_1Input_afa32146b371e45509eef59474e6b0ef2}
+Constructor and Destructor
+
+Default Constructor 
+
+Reimplemented in \hyperlink{classPlatform_1_1Input_1_1Linux_1_1Input_a4d092b21c9937be42de3ec9b182959a8}{Platform::Input::Linux::Input}.
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlatform_1_1Input_1_1Input_afd31cd2634d8f44441ac04fd2b2baf3a}{
+\index{Platform::Input::Input@{Platform::Input::Input}!VInitialize@{VInitialize}}
+\index{VInitialize@{VInitialize}!Platform::Input::Input@{Platform::Input::Input}}
+\subsubsection[{VInitialize}]{\setlength{\rightskip}{0pt plus 5cm}void PL\_\-IN\_\-Input::VInitialize ({\bf Void} $\ast$ {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classPlatform_1_1Input_1_1Input_afd31cd2634d8f44441ac04fd2b2baf3a}
+standard functions
+
+initialize 
+
+Reimplemented in \hyperlink{classPlatform_1_1Input_1_1Linux_1_1Input_adfac30a8469aab931f5212c251104857}{Platform::Input::Linux::Input}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Platform/Input/PI\_\-IN\_\-Input.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Platform/Input/PL\_\-IN\_\-Input.cpp\end{DoxyCompactItemize}

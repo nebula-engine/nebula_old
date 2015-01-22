@@ -1,0 +1,153 @@
+\hypertarget{classUDPSocket}{
+\section{UDPSocket Class Reference}
+\label{classUDPSocket}\index{UDPSocket@{UDPSocket}}
+}
+
+
+UDP socket class.  
+
+
+{\ttfamily \#include $<$UDPSocket.h$>$}Inheritance diagram for UDPSocket::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classUDPSocket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}{UDPSocket} ()  throw (SocketException)
+\item 
+\hyperlink{classUDPSocket_a14dcb55c4b60b12d4a7fff648cbb825f}{UDPSocket} (unsigned short localPort)  throw (SocketException)
+\item 
+\hyperlink{classUDPSocket_af19281c523f15ed30d7d78f09033713d}{UDPSocket} (const string \&localAddress, unsigned short localPort)  throw (SocketException)
+\item 
+void \hyperlink{classUDPSocket_a7482e8e61cef160e1a7c0d6ac15c01be}{disconnect} ()  throw (SocketException)
+\item 
+void \hyperlink{classUDPSocket_a41a3595e226f273953cbd38618af5d5b}{sendTo} (const void $\ast$buffer, int bufferLen, const string \&foreignAddress, unsigned short foreignPort)  throw (SocketException)
+\item 
+int \hyperlink{classUDPSocket_abcd5c064e2496bd8b1888fd4e1b68949}{recvFrom} (void $\ast$buffer, int bufferLen, string \&sourceAddress, unsigned short \&sourcePort)  throw (SocketException)
+\item 
+void \hyperlink{classUDPSocket_a4dcfff33b45d1b84b5a602fc6f4a27f8}{setMulticastTTL} (unsigned char multicastTTL)  throw (SocketException)
+\item 
+void \hyperlink{classUDPSocket_a1b20c1e8bd49a9bd9b53dd4f1c8d4c11}{joinGroup} (const string \&multicastGroup)  throw (SocketException)
+\item 
+void \hyperlink{classUDPSocket_a78835eaeca8a5ac039b4579c795e3640}{leaveGroup} (const string \&multicastGroup)  throw (SocketException)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+UDP socket class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}{
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\subsubsection[{UDPSocket}]{\setlength{\rightskip}{0pt plus 5cm}UDPSocket::UDPSocket ()  throw ({\bf SocketException})}}
+\label{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}
+Construct a UDP socket 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to create UDP socket \end{DoxyExceptions}
+\hypertarget{classUDPSocket_a14dcb55c4b60b12d4a7fff648cbb825f}{
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\subsubsection[{UDPSocket}]{\setlength{\rightskip}{0pt plus 5cm}UDPSocket::UDPSocket (unsigned short {\em localPort})  throw ({\bf SocketException})}}
+\label{classUDPSocket_a14dcb55c4b60b12d4a7fff648cbb825f}
+Construct a UDP socket with the given local port 
+\begin{DoxyParams}{Parameters}
+\item[{\em localPort}]local port \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to create UDP socket \end{DoxyExceptions}
+\hypertarget{classUDPSocket_af19281c523f15ed30d7d78f09033713d}{
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\subsubsection[{UDPSocket}]{\setlength{\rightskip}{0pt plus 5cm}UDPSocket::UDPSocket (const string \& {\em localAddress}, \/  unsigned short {\em localPort})  throw ({\bf SocketException})}}
+\label{classUDPSocket_af19281c523f15ed30d7d78f09033713d}
+Construct a UDP socket with the given local port and address 
+\begin{DoxyParams}{Parameters}
+\item[{\em localAddress}]local address \item[{\em localPort}]local port \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to create UDP socket \end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUDPSocket_a7482e8e61cef160e1a7c0d6ac15c01be}{
+\index{UDPSocket@{UDPSocket}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!UDPSocket@{UDPSocket}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void UDPSocket::disconnect ()  throw ({\bf SocketException})}}
+\label{classUDPSocket_a7482e8e61cef160e1a7c0d6ac15c01be}
+Unset foreign address and port \begin{DoxyReturn}{Returns}
+true if disassociation is successful 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to disconnect UDP socket \end{DoxyExceptions}
+\hypertarget{classUDPSocket_a1b20c1e8bd49a9bd9b53dd4f1c8d4c11}{
+\index{UDPSocket@{UDPSocket}!joinGroup@{joinGroup}}
+\index{joinGroup@{joinGroup}!UDPSocket@{UDPSocket}}
+\subsubsection[{joinGroup}]{\setlength{\rightskip}{0pt plus 5cm}void UDPSocket::joinGroup (const string \& {\em multicastGroup})  throw ({\bf SocketException})}}
+\label{classUDPSocket_a1b20c1e8bd49a9bd9b53dd4f1c8d4c11}
+Join the specified multicast group 
+\begin{DoxyParams}{Parameters}
+\item[{\em multicastGroup}]multicast group address to join \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to join group \end{DoxyExceptions}
+\hypertarget{classUDPSocket_a78835eaeca8a5ac039b4579c795e3640}{
+\index{UDPSocket@{UDPSocket}!leaveGroup@{leaveGroup}}
+\index{leaveGroup@{leaveGroup}!UDPSocket@{UDPSocket}}
+\subsubsection[{leaveGroup}]{\setlength{\rightskip}{0pt plus 5cm}void UDPSocket::leaveGroup (const string \& {\em multicastGroup})  throw ({\bf SocketException})}}
+\label{classUDPSocket_a78835eaeca8a5ac039b4579c795e3640}
+Leave the specified multicast group 
+\begin{DoxyParams}{Parameters}
+\item[{\em multicastGroup}]multicast group address to leave \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to leave group \end{DoxyExceptions}
+\hypertarget{classUDPSocket_abcd5c064e2496bd8b1888fd4e1b68949}{
+\index{UDPSocket@{UDPSocket}!recvFrom@{recvFrom}}
+\index{recvFrom@{recvFrom}!UDPSocket@{UDPSocket}}
+\subsubsection[{recvFrom}]{\setlength{\rightskip}{0pt plus 5cm}int UDPSocket::recvFrom (void $\ast$ {\em buffer}, \/  int {\em bufferLen}, \/  string \& {\em sourceAddress}, \/  unsigned short \& {\em sourcePort})  throw ({\bf SocketException})}}
+\label{classUDPSocket_abcd5c064e2496bd8b1888fd4e1b68949}
+Read read up to bufferLen bytes data from this socket. The given buffer is where the data will be placed 
+\begin{DoxyParams}{Parameters}
+\item[{\em buffer}]buffer to receive data \item[{\em bufferLen}]maximum number of bytes to receive \item[{\em sourceAddress}]address of datagram source \item[{\em sourcePort}]port of data source \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of bytes received and -\/1 for error 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to receive datagram \end{DoxyExceptions}
+\hypertarget{classUDPSocket_a41a3595e226f273953cbd38618af5d5b}{
+\index{UDPSocket@{UDPSocket}!sendTo@{sendTo}}
+\index{sendTo@{sendTo}!UDPSocket@{UDPSocket}}
+\subsubsection[{sendTo}]{\setlength{\rightskip}{0pt plus 5cm}void UDPSocket::sendTo (const void $\ast$ {\em buffer}, \/  int {\em bufferLen}, \/  const string \& {\em foreignAddress}, \/  unsigned short {\em foreignPort})  throw ({\bf SocketException})}}
+\label{classUDPSocket_a41a3595e226f273953cbd38618af5d5b}
+Send the given buffer as a UDP datagram to the specified address/port 
+\begin{DoxyParams}{Parameters}
+\item[{\em buffer}]buffer to be written \item[{\em bufferLen}]number of bytes to write \item[{\em foreignAddress}]address (IP address or name) to send to \item[{\em foreignPort}]port number to send to \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if send is successful 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to send datagram \end{DoxyExceptions}
+\hypertarget{classUDPSocket_a4dcfff33b45d1b84b5a602fc6f4a27f8}{
+\index{UDPSocket@{UDPSocket}!setMulticastTTL@{setMulticastTTL}}
+\index{setMulticastTTL@{setMulticastTTL}!UDPSocket@{UDPSocket}}
+\subsubsection[{setMulticastTTL}]{\setlength{\rightskip}{0pt plus 5cm}void UDPSocket::setMulticastTTL (unsigned char {\em multicastTTL})  throw ({\bf SocketException})}}
+\label{classUDPSocket_a4dcfff33b45d1b84b5a602fc6f4a27f8}
+Set the multicast TTL 
+\begin{DoxyParams}{Parameters}
+\item[{\em multicastTTL}]multicast TTL \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classSocketException}{SocketException}}]thrown if unable to set TTL \end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Network/Berk/UDPSocket.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Network/Berk/UDPSocket.cpp\end{DoxyCompactItemize}

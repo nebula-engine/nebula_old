@@ -1,0 +1,101 @@
+\hypertarget{classNetwork_1_1Buffer}{
+\section{Network::Buffer Class Reference}
+\label{classNetwork_1_1Buffer}\index{Network::Buffer@{Network::Buffer}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNetwork_1_1Buffer_a2059a0c73d4cef2158df68a991e1b79a}{
+{\bfseries SocketBuffer} (SocketClass $\ast$socketClassParam, int($\ast$errorFuncParam)(SocketClass $\ast$, int), int($\ast$packetFuncParam)(SocketClass $\ast$))}
+\label{classNetwork_1_1Buffer_a2059a0c73d4cef2158df68a991e1b79a}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_afa008ffcb28fe2b32bd8e8fbe8a71f73}{
+void {\bfseries castDataToBuffer} ()}
+\label{classNetwork_1_1Buffer_afa008ffcb28fe2b32bd8e8fbe8a71f73}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a39eebfa132132ec128efeaaa4115f791}{
+void {\bfseries castBufferToData} ()}
+\label{classNetwork_1_1Buffer_a39eebfa132132ec128efeaaa4115f791}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_aad30167fe6de88054d130ed68107042f}{
+void {\bfseries send} ()}
+\label{classNetwork_1_1Buffer_aad30167fe6de88054d130ed68107042f}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a9bb49b3a973ed122a0a76038d742311c}{
+void {\bfseries recv} ()}
+\label{classNetwork_1_1Buffer_a9bb49b3a973ed122a0a76038d742311c}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a407e37cea75f7b627c8a28f979b6bf68}{
+void {\bfseries route} ()}
+\label{classNetwork_1_1Buffer_a407e37cea75f7b627c8a28f979b6bf68}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNetwork_1_1Buffer_a53db14f08d51b9ae6230861ece6ac3ce}{
+int {\bfseries remaining}}
+\label{classNetwork_1_1Buffer_a53db14f08d51b9ae6230861ece6ac3ce}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a3a55ea5d777c3bd1eb96d7c40cb97a36}{
+int {\bfseries position}}
+\label{classNetwork_1_1Buffer_a3a55ea5d777c3bd1eb96d7c40cb97a36}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a5cb06549252c6de85ebb93e5c2691107}{
+int {\bfseries result} = 0}
+\label{classNetwork_1_1Buffer_a5cb06549252c6de85ebb93e5c2691107}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_aa58b2658b8ba941b062d2d19b090771a}{
+char {\bfseries temp\_\-buffer} \mbox{[}sizeof(DataHeader)+SOCK\_\-BUF\_\-LEN\mbox{]}}
+\label{classNetwork_1_1Buffer_aa58b2658b8ba941b062d2d19b090771a}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_adaefa73b103a58a1be4d42bb79d2054d}{
+int {\bfseries temp\_\-position} = 0}
+\label{classNetwork_1_1Buffer_adaefa73b103a58a1be4d42bb79d2054d}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_af8d818e5199a5610da4078b59adec5d5}{
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>DataHeader {\bfseries header}\\
+\>char {\bfseries bufferHeader} \mbox{[}sizeof(DataHeader)\mbox{]}\\
+\}; }
+\label{classNetwork_1_1Buffer_af8d818e5199a5610da4078b59adec5d5}
+\\
+
+\end{tabbing}\item 
+\hypertarget{classNetwork_1_1Buffer_a67aae59e294abc122593abd9ae1b008a}{
+char {\bfseries bufferData} \mbox{[}SOCK\_\-BUF\_\-LEN\mbox{]}}
+\label{classNetwork_1_1Buffer_a67aae59e294abc122593abd9ae1b008a}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a0b4a383e14a54abd027bd0afe13fc4a6}{
+bool {\bfseries reading\_\-header}}
+\label{classNetwork_1_1Buffer_a0b4a383e14a54abd027bd0afe13fc4a6}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_a16ec7619d942a8d5adfd5af907231240}{
+char {\bfseries bufferSend} \mbox{[}sizeof(DataHeader)+SOCK\_\-BUF\_\-LEN\mbox{]}}
+\label{classNetwork_1_1Buffer_a16ec7619d942a8d5adfd5af907231240}
+
+\item 
+\hypertarget{classNetwork_1_1Buffer_af918a81b209d786c8bc1aa8d6d1a41f1}{
+int($\ast$ {\bfseries errorFunc} )(SocketClass $\ast$, int)}
+\label{classNetwork_1_1Buffer_af918a81b209d786c8bc1aa8d6d1a41f1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Network/old/Buffer.h\end{DoxyCompactItemize}

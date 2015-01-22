@@ -1,0 +1,93 @@
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor}{
+\section{Content::Actor::Physics::PhysX::Actor Class Reference}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor}\index{Content::Actor::Physics::PhysX::Actor@{Content::Actor::Physics::PhysX::Actor}}
+}
+
+
+Base class for Actors.  
+
+
+{\ttfamily \#include $<$CO\_\-AC\_\-PH\_\-PX\_\-Actor.h$>$}Inheritance diagram for Content::Actor::Physics::PhysX::Actor::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.59933cm]{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a4b37905ae3edc362c46e28ed017c12a1}{
+\hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a4b37905ae3edc362c46e28ed017c12a1}{Actor} ()}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a4b37905ae3edc362c46e28ed017c12a1}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a92aa2c06957f0660d1c6e51f64f96023}{
+\hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a92aa2c06957f0660d1c6e51f64f96023}{$\sim$Actor} ()}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a92aa2c06957f0660d1c6e51f64f96023}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a09b80b8138fad481ee015d6987e16752}{
+virtual void \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a09b80b8138fad481ee015d6987e16752}{SetActor} (physx::PxActor $\ast$actor)}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a09b80b8138fad481ee015d6987e16752}
+
+\begin{DoxyCompactList}\small\item\em physx actor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ac0fdd75fb6a3bd5901a41560e76418e0}{
+physx::PxActor $\ast$ \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ac0fdd75fb6a3bd5901a41560e76418e0}{GetPxActor} ()}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ac0fdd75fb6a3bd5901a41560e76418e0}
+
+\begin{DoxyCompactList}\small\item\em physx actor \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Standard Functions}\par
+{\em \label{_amgrp73a6f6f6732ceea086632f66fc34a9e7}
+ Initialize }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_aa98e1cafdc6ae0b0baab9aaa2396b4b4}{
+virtual void {\bfseries VInitialize} (\hyperlink{structVoid}{Void} $\ast$data)}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_aa98e1cafdc6ae0b0baab9aaa2396b4b4}
+
+\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a3a918c9b02323a981dba8533b5d1d1b7}{
+virtual void \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a3a918c9b02323a981dba8533b5d1d1b7}{VShutDown} ()}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a3a918c9b02323a981dba8533b5d1d1b7}
+
+\begin{DoxyCompactList}\small\item\em ShutDown. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9b4712dd7f469cc48188e0fb8ae5211a}{
+virtual void \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9b4712dd7f469cc48188e0fb8ae5211a}{VUpdate} ()}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9b4712dd7f469cc48188e0fb8ae5211a}
+
+\begin{DoxyCompactList}\small\item\em Update. \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ab10d1e0f9de988996a86842bb10dc919}{
+virtual void \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ab10d1e0f9de988996a86842bb10dc919}{VStep} (\hyperlink{structVoid}{Void} $\ast$)}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_ab10d1e0f9de988996a86842bb10dc919}
+
+\begin{DoxyCompactList}\small\item\em Step. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+physx::PxActor $\ast$ \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a95d4f68f681a07db21f8b25947e7560a}{m\_\-pxActor}
+\item 
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9e1a6e6d959eb1b9de104dddf4b79ea0}{
+physx::PxTransform \hyperlink{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9e1a6e6d959eb1b9de104dddf4b79ea0}{m\_\-transform}}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a9e1a6e6d959eb1b9de104dddf4b79ea0}
+
+\begin{DoxyCompactList}\small\item\em PxTransform. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Base class for Actors. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a95d4f68f681a07db21f8b25947e7560a}{
+\index{Content::Actor::Physics::PhysX::Actor@{Content::Actor::Physics::PhysX::Actor}!m\_\-pxActor@{m\_\-pxActor}}
+\index{m\_\-pxActor@{m\_\-pxActor}!Content::Actor::Physics::PhysX::Actor@{Content::Actor::Physics::PhysX::Actor}}
+\subsubsection[{m\_\-pxActor}]{\setlength{\rightskip}{0pt plus 5cm}physx::PxActor$\ast$ {\bf Content::Actor::Physics::PhysX::Actor::m\_\-pxActor}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classContent_1_1Actor_1_1Physics_1_1PhysX_1_1Actor_a95d4f68f681a07db21f8b25947e7560a}
+physX attributes PxActor 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Content/Actor/Physics/PhysX/CO\_\-AC\_\-PH\_\-PX\_\-Actor.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Content/Actor/Physics/PhysX/CO\_\-AC\_\-PH\_\-PX\_\-Actor.cpp\end{DoxyCompactItemize}

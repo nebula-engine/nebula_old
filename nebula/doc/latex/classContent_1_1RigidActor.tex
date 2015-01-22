@@ -1,0 +1,80 @@
+\hypertarget{classContent_1_1RigidActor}{
+\section{Content::RigidActor Class Reference}
+\label{classContent_1_1RigidActor}\index{Content::RigidActor@{Content::RigidActor}}
+}
+Inheritance diagram for Content::RigidActor::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6cm]{classContent_1_1RigidActor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1RigidActor_a5a47c6fbfef926e4ecd1d4007fa1c9d0}{
+{\bfseries RigidActor} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1RigidActor_a5a47c6fbfef926e4ecd1d4007fa1c9d0}
+
+\item 
+\hypertarget{classContent_1_1RigidActor_a0dba26c8c1a0a81382e20f996281d114}{
+virtual int {\bfseries VInitialize} ()}
+\label{classContent_1_1RigidActor_a0dba26c8c1a0a81382e20f996281d114}
+
+\item 
+\hypertarget{classContent_1_1RigidActor_ad937a0f32ea1f47bdbfda53dcc007ce0}{
+int {\bfseries CreateShapeBox} (\hyperlink{classContent_1_1Shape_1_1Box}{Shape::Box} $\ast$\&shape)}
+\label{classContent_1_1RigidActor_ad937a0f32ea1f47bdbfda53dcc007ce0}
+
+\item 
+\hypertarget{classContent_1_1RigidActor_a372f3f8bf780199c936a35fadb933210}{
+int {\bfseries VRender} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1RigidActor_a372f3f8bf780199c936a35fadb933210}
+
+\item 
+\hypertarget{classContent_1_1RigidActor_a8bf95f8a2f4e1cc6e9c716b25aad7202}{
+physx::PxMaterial $\ast$ {\bfseries GetPxMaterial} (int a)}
+\label{classContent_1_1RigidActor_a8bf95f8a2f4e1cc6e9c716b25aad7202}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf MapPtr Shape operations}\par
+{\em \label{_amgrp726056380bdf0543f65a78c3b7b2b23d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1RigidActor_a1172670c7d48d23cb0f44f6412d3fc53}{
+int {\bfseries ShapeRender\_\-For} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1RigidActor_a1172670c7d48d23cb0f44f6412d3fc53}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Individual Shape operations}\par
+{\em \label{_amgrpc855414357a724b0a30bcc73b08d6b48}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1RigidActor_a786a6e91abc26616dd566ea8376ccf93}{
+void {\bfseries ShapeRender} (\hyperlink{classContent_1_1Shape_1_1Shape}{Shape::Shape} $\ast$shape, \hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1RigidActor_a786a6e91abc26616dd566ea8376ccf93}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{Indent}{\bf Maps}\par
+{\em \label{_amgrpaf51fdf94adbb4b6fe4f1275b07df10d}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1RigidActor_a3a111ad05b8e4167b990ac1562434d3c}{
+\hyperlink{classMapPtr}{MapPtr}$<$ physx::PxMaterial $>$ {\bfseries m\_\-material}}
+\label{classContent_1_1RigidActor_a3a111ad05b8e4167b990ac1562434d3c}
+
+\item 
+\hypertarget{classContent_1_1RigidActor_ab1e603eaf34105967b6caa018a92f809}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classContent_1_1Shape_1_1Shape}{Shape::Shape} $>$ {\bfseries m\_\-shape}}
+\label{classContent_1_1RigidActor_ab1e603eaf34105967b6caa018a92f809}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Actor/RigidActor.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Actor/RigidActor.cpp\end{DoxyCompactItemize}

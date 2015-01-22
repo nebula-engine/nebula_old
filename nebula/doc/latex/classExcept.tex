@@ -1,0 +1,57 @@
+\hypertarget{classExcept}{
+\section{Except Class Reference}
+\label{classExcept}\index{Except@{Except}}
+}
+
+
+Signals a problem.  
+
+
+{\ttfamily \#include $<$Except.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structExcept_1_1ErrorCode}{ErrorCode}
+\begin{DoxyCompactList}\small\item\em error codes \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExcept_a11d3d6f909f2f86f2293f1c6353f2da0}{Except} (const string \&message, int code=ErrorCode::eDEFAULT, bool inclSysMsg=false)  throw ()
+\item 
+\hypertarget{classExcept_a9965506978c3bbd4c1921b7c75a54e3b}{
+\hyperlink{classExcept_a9965506978c3bbd4c1921b7c75a54e3b}{$\sim$Except} ()  throw ()}
+\label{classExcept_a9965506978c3bbd4c1921b7c75a54e3b}
+
+\begin{DoxyCompactList}\small\item\em Provided just to guarantee that no exceptions are thrown. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classExcept_a33a7e9f297703a8f427046004bf1260b}{what} () const   throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Signals a problem. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classExcept_a11d3d6f909f2f86f2293f1c6353f2da0}{
+\index{Except@{Except}!Except@{Except}}
+\index{Except@{Except}!Except@{Except}}
+\subsubsection[{Except}]{\setlength{\rightskip}{0pt plus 5cm}Except::Except (const string \& {\em message}, \/  int {\em code} = {\ttfamily ErrorCode::eDEFAULT}, \/  bool {\em inclSysMsg} = {\ttfamily false})  throw ()}}
+\label{classExcept_a11d3d6f909f2f86f2293f1c6353f2da0}
+Construct a \hyperlink{classSocketException}{SocketException} with a explanatory message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em message}]explanatory message \item[{\em error}]code \item[{\em inclSysMsg}]true if system message (from strerror(errno)) should be postfixed to the user provided message \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classExcept_a33a7e9f297703a8f427046004bf1260b}{
+\index{Except@{Except}!what@{what}}
+\index{what@{what}!Except@{Except}}
+\subsubsection[{what}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Except::what () const  throw ()}}
+\label{classExcept_a33a7e9f297703a8f427046004bf1260b}
+Get the exception message \begin{DoxyReturn}{Returns}
+exception message 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Utilities/Except.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Utilities/Except.cpp\end{DoxyCompactItemize}

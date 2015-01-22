@@ -1,0 +1,99 @@
+<h1>NxPhysics</h1>
+<ul>
+    <li>
+        container for all physics data and methods
+    </li>
+    <li>
+        wrapper for PxPhysics
+    </li>
+    <li>
+        adds custom functionality and automation to PxPhysics
+        <ul>
+            <li>
+                examples
+                <ul>
+                    <li>
+                        Drag-Lift Forces
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        (not critical) try to minimize work to switch from PxPhysics to other engines
+    </li>
+</ul>
+
+
+
+<h2>FetchResults()</h2>
+Callbacks called during
+<ul>
+    <li>
+        before buffer swap
+        <ul>
+            <li>
+                onTrigger
+            </li>
+            <li>
+                onContact
+            </li>
+            <li>
+                onConstraintBreak
+            </li>
+        </ul>
+    </li>
+    <li>
+        after buffer swap
+        <ul>
+            <li>
+                onSleep
+            </li>
+            <li>
+                onWake
+            </li>
+        </ul>
+    </li>
+    <li>
+        Callbacks that occur for all objects
+        <ul>
+            <li>
+                onConstraintBreak
+            </li>
+            <li>
+                onSleep
+            </li>
+            <li>
+                onWake
+            </li>
+        </ul>
+    </li>
+    <li>
+        Callbacks that only occur if filter shader callback flag is set
+        <ul>
+            <li>
+                onTrigger
+            </li>
+            <li>
+                onContact
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

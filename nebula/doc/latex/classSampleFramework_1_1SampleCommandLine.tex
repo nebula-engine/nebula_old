@@ -1,0 +1,73 @@
+\hypertarget{classSampleFramework_1_1SampleCommandLine}{
+\section{SampleFramework::SampleCommandLine Class Reference}
+\label{classSampleFramework_1_1SampleCommandLine}\index{SampleFramework::SampleCommandLine@{SampleFramework::SampleCommandLine}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a76622b643b29cdb5c3370acb91a30601}{
+{\bfseries SampleCommandLine} (unsigned int argc, const char $\ast$const $\ast$argv)}
+\label{classSampleFramework_1_1SampleCommandLine_a76622b643b29cdb5c3370acb91a30601}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a0fcd0882db5e0543fd4eb3d75b4f2af0}{
+{\bfseries SampleCommandLine} (const char $\ast$args)}
+\label{classSampleFramework_1_1SampleCommandLine_a0fcd0882db5e0543fd4eb3d75b4f2af0}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_aa6a8a5ed079146456eea02d20bfde16d}{
+bool \hyperlink{classSampleFramework_1_1SampleCommandLine_aa6a8a5ed079146456eea02d20bfde16d}{hasSwitch} (const char $\ast$s, const unsigned int argNum=invalidArgNum) const }
+\label{classSampleFramework_1_1SampleCommandLine_aa6a8a5ed079146456eea02d20bfde16d}
+
+\begin{DoxyCompactList}\small\item\em has a given command-\/line switch? \item\end{DoxyCompactList}\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a89633df2d82ba7d9875352a753724559}{
+const char $\ast$ \hyperlink{classSampleFramework_1_1SampleCommandLine_a89633df2d82ba7d9875352a753724559}{getValue} (const char $\ast$s, unsigned int argNum=invalidArgNum) const }
+\label{classSampleFramework_1_1SampleCommandLine_a89633df2d82ba7d9875352a753724559}
+
+\begin{DoxyCompactList}\small\item\em gets the value of a switch... \item\end{DoxyCompactList}\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a256aa8da0daefbbf86b2a0a6626b3c81}{
+unsigned int {\bfseries getNumArgs} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_a256aa8da0daefbbf86b2a0a6626b3c81}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a0458a17045818d4c943e8216f42c6950}{
+const char $\ast$ {\bfseries getProgramName} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_a0458a17045818d4c943e8216f42c6950}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a41e49814603360930bb5b8f58bc5621d}{
+unsigned int {\bfseries unusedArgsBufSize} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_a41e49814603360930bb5b8f58bc5621d}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a9af081da99b3408f54be61ed95521e8c}{
+const char $\ast$ {\bfseries getUnusedArgs} (char $\ast$buf, unsigned int bufSize) const }
+\label{classSampleFramework_1_1SampleCommandLine_a9af081da99b3408f54be61ed95521e8c}
+
+\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a3c4cb1c7c66376b8bf26348aab089744}{
+bool \hyperlink{classSampleFramework_1_1SampleCommandLine_a3c4cb1c7c66376b8bf26348aab089744}{isCommand} (const char $\ast$s) const }
+\label{classSampleFramework_1_1SampleCommandLine_a3c4cb1c7c66376b8bf26348aab089744}
+
+\begin{DoxyCompactList}\small\item\em if the first argument is the given command. \item\end{DoxyCompactList}\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_ab6709c21e6a5cd98c5b623a785d431fa}{
+const char $\ast$ \hyperlink{classSampleFramework_1_1SampleCommandLine_ab6709c21e6a5cd98c5b623a785d431fa}{getCommand} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_ab6709c21e6a5cd98c5b623a785d431fa}
+
+\begin{DoxyCompactList}\small\item\em get the first argument assuming it isn't a switch. \item\end{DoxyCompactList}\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_ade51b9540aa552635767d92457cddc00}{
+unsigned int \hyperlink{classSampleFramework_1_1SampleCommandLine_ade51b9540aa552635767d92457cddc00}{getArgC} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_ade51b9540aa552635767d92457cddc00}
+
+\begin{DoxyCompactList}\small\item\em get the raw command-\/line argument list... \item\end{DoxyCompactList}\item 
+\hypertarget{classSampleFramework_1_1SampleCommandLine_a90cbc190290ab2bb9462956f88a22267}{
+const char $\ast$const $\ast$ {\bfseries getArgV} (void) const }
+\label{classSampleFramework_1_1SampleCommandLine_a90cbc190290ab2bb9462956f88a22267}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Framework/CommandLine.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Framework/CommandLine.cpp\end{DoxyCompactItemize}

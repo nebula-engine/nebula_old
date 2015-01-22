@@ -1,0 +1,87 @@
+\hypertarget{classContent_1_1Controller}{
+\section{Content::Controller Class Reference}
+\label{classContent_1_1Controller}\index{Content::Controller@{Content::Controller}}
+}
+Inheritance diagram for Content::Controller::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classContent_1_1Controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Controller_ab532048e1ea4ce0cc9c76d42fe7d953c}{
+{\bfseries Controller} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1Controller_ab532048e1ea4ce0cc9c76d42fe7d953c}
+
+\item 
+\hypertarget{classContent_1_1Controller_af09add78fc6e2f9c735ad0b0c51be2c4}{
+virtual int {\bfseries VInitialize} ()}
+\label{classContent_1_1Controller_af09add78fc6e2f9c735ad0b0c51be2c4}
+
+\item 
+\hypertarget{classContent_1_1Controller_aec516d4853da325756e377039f71b862}{
+int {\bfseries CreateShapeBox} (\hyperlink{classContent_1_1Shape_1_1Box}{Shape::Box} $\ast$\&shape)}
+\label{classContent_1_1Controller_aec516d4853da325756e377039f71b862}
+
+\item 
+\hypertarget{classContent_1_1Controller_af1fff729e242a08a85a5ecac9c22b13c}{
+int {\bfseries VRender} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1Controller_af1fff729e242a08a85a5ecac9c22b13c}
+
+\item 
+\hypertarget{classContent_1_1Controller_a600501d5bcb422f0b3a1132c0b42856a}{
+int {\bfseries VStep} (double dt)}
+\label{classContent_1_1Controller_a600501d5bcb422f0b3a1132c0b42856a}
+
+\item 
+\hypertarget{classContent_1_1Controller_adfdfb6507bf390e4fd1755eed0af5d23}{
+physx::PxMaterial $\ast$ {\bfseries GetPxMaterial} (int a)}
+\label{classContent_1_1Controller_adfdfb6507bf390e4fd1755eed0af5d23}
+
+\item 
+\hypertarget{classContent_1_1Controller_a4769ed97d3c213c87006e5a2f3ce8c8e}{
+int {\bfseries SetPxController} (physx::PxController $\ast$controller)}
+\label{classContent_1_1Controller_a4769ed97d3c213c87006e5a2f3ce8c8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Controller_ada1bfa9c60bab5485c876a0a8b74fe11}{
+physx::PxController $\ast$ {\bfseries m\_\-controller}}
+\label{classContent_1_1Controller_ada1bfa9c60bab5485c876a0a8b74fe11}
+
+\item 
+\hypertarget{classContent_1_1Controller_a48c981f5102864ce3a97ee4037bd89c3}{
+\hyperlink{classMapPtr}{MapPtr}$<$ physx::PxMaterial $>$ {\bfseries m\_\-material}}
+\label{classContent_1_1Controller_a48c981f5102864ce3a97ee4037bd89c3}
+
+\item 
+\hypertarget{classContent_1_1Controller_ae58086cc7a7e66cf197fed6c7c989263}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classContent_1_1Shape_1_1Shape}{Shape::Shape} $>$ {\bfseries m\_\-shape}}
+\label{classContent_1_1Controller_ae58086cc7a7e66cf197fed6c7c989263}
+
+\item 
+\hypertarget{classContent_1_1Controller_af6146530689d59d74c68b7aae37d3ad9}{
+physx::PxVec3 {\bfseries m\_\-pos}}
+\label{classContent_1_1Controller_af6146530689d59d74c68b7aae37d3ad9}
+
+\item 
+\hypertarget{classContent_1_1Controller_aeed899bdbd46a3e3a3b210431a0e2829}{
+physx::PxVec3 {\bfseries m\_\-look}}
+\label{classContent_1_1Controller_aeed899bdbd46a3e3a3b210431a0e2829}
+
+\item 
+\hypertarget{classContent_1_1Controller_a61b6478a87e81377c0d649a5c8de9f0a}{
+physx::PxVec3 {\bfseries m\_\-up}}
+\label{classContent_1_1Controller_a61b6478a87e81377c0d649a5c8de9f0a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Actor/Controller.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Actor/Controller.cpp\end{DoxyCompactItemize}

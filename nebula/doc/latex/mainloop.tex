@@ -1,0 +1,13 @@
+
+\begin{DoxyItemize}
+\item Sequential
+\begin{DoxyItemize}
+\item Modules are updated sequentially each execution of the loop
+\end{DoxyItemize}
+\item Multithreaded
+\begin{DoxyItemize}
+\item There is no loop
+\item Modules are updated simulataneously on multiple threads with appropriate sync points and resource managament
+\item Threads are released upon application launch and each use their own loop to handle changing conditions and perform repetative tasks 
+\end{DoxyItemize}
+\end{DoxyItemize}

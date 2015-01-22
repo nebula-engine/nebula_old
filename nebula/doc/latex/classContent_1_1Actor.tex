@@ -1,0 +1,83 @@
+\hypertarget{classContent_1_1Actor}{
+\section{Content::Actor Class Reference}
+\label{classContent_1_1Actor}\index{Content::Actor@{Content::Actor}}
+}
+
+
+Base class for Actors.  
+
+
+{\ttfamily \#include $<$Actor.h$>$}Inheritance diagram for Content::Actor::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6cm]{classContent_1_1Actor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_a78a500d2bf46938fd19b855736663ef1}{
+{\bfseries Actor} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1Actor_a78a500d2bf46938fd19b855736663ef1}
+
+\item 
+\hypertarget{classContent_1_1Actor_a3bf34ce11c7eb362f5a0ea24ebda838c}{
+virtual int {\bfseries SetActor} (physx::PxActor $\ast$actor)}
+\label{classContent_1_1Actor_a3bf34ce11c7eb362f5a0ea24ebda838c}
+
+\item 
+\hypertarget{classContent_1_1Actor_a74c01139c24631282fa8303680f23725}{
+virtual int {\bfseries GetTransform} (physx::PxTransform \&trans)}
+\label{classContent_1_1Actor_a74c01139c24631282fa8303680f23725}
+
+\item 
+\hypertarget{classContent_1_1Actor_a94bef7fd7a78042c4b8dc7445deb7002}{
+virtual int {\bfseries SetTransform} (physx::PxTransform \&trans)}
+\label{classContent_1_1Actor_a94bef7fd7a78042c4b8dc7445deb7002}
+
+\item 
+\hypertarget{classContent_1_1Actor_ae6c64f5aff7cf9aac0854ea44ba7d382}{
+physx::PxActor $\ast$ {\bfseries GetPxActor} ()}
+\label{classContent_1_1Actor_ae6c64f5aff7cf9aac0854ea44ba7d382}
+
+\item 
+\hypertarget{classContent_1_1Actor_aaf21cc2520beb944201d410da54e5f11}{
+virtual int {\bfseries VRender} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1Actor_aaf21cc2520beb944201d410da54e5f11}
+
+\item 
+\hypertarget{classContent_1_1Actor_a9ff1a1c741b71dc811abf35c9d68fced}{
+virtual int {\bfseries VStep} (double dt)}
+\label{classContent_1_1Actor_a9ff1a1c741b71dc811abf35c9d68fced}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+physx::PxActor $\ast$ \hyperlink{classContent_1_1Actor_a228d76695160303b4f02ca60f19a5d35}{m\_\-actor}
+\item 
+\hypertarget{classContent_1_1Actor_a053d90de682f161d7eaf575bdef38e10}{
+physx::PxTransform \hyperlink{classContent_1_1Actor_a053d90de682f161d7eaf575bdef38e10}{m\_\-transform}}
+\label{classContent_1_1Actor_a053d90de682f161d7eaf575bdef38e10}
+
+\begin{DoxyCompactList}\small\item\em PxTransform. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Base class for Actors. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classContent_1_1Actor_a228d76695160303b4f02ca60f19a5d35}{
+\index{Content::Actor@{Content::Actor}!m\_\-actor@{m\_\-actor}}
+\index{m\_\-actor@{m\_\-actor}!Content::Actor@{Content::Actor}}
+\subsubsection[{m\_\-actor}]{\setlength{\rightskip}{0pt plus 5cm}physx::PxActor$\ast$ {\bf Content::Actor::m\_\-actor}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classContent_1_1Actor_a228d76695160303b4f02ca60f19a5d35}
+PhysX attributes PxActor 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Actor/Actor.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Actor/Actor.cpp\end{DoxyCompactItemize}

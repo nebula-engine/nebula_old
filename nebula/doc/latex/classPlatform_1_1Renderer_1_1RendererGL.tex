@@ -1,0 +1,100 @@
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL}{
+\section{Platform::Renderer::RendererGL Class Reference}
+\label{classPlatform_1_1Renderer_1_1RendererGL}\index{Platform::Renderer::RendererGL@{Platform::Renderer::RendererGL}}
+}
+
+
+OpenGL implementation.  
+
+
+{\ttfamily \#include $<$PL\_\-RE\_\-GL\_\-Renderer.h$>$}Inheritance diagram for Platform::Renderer::RendererGL::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classPlatform_1_1Renderer_1_1RendererGL}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a83d7aa484a25e0626b9c244e78ec2bcf}{
+void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a83d7aa484a25e0626b9c244e78ec2bcf}{DrawQuad} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a83d7aa484a25e0626b9c244e78ec2bcf}
+
+\begin{DoxyCompactList}\small\item\em draw a quad \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a30f274b1423886864f9b26f1b0546264}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a30f274b1423886864f9b26f1b0546264}{VDrawCube} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a30f274b1423886864f9b26f1b0546264}
+
+\begin{DoxyCompactList}\small\item\em draw a cube \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a24fe5bab6d8ef336a0b0411deec1769d}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a24fe5bab6d8ef336a0b0411deec1769d}{VPushMatrix} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a24fe5bab6d8ef336a0b0411deec1769d}
+
+\begin{DoxyCompactList}\small\item\em push matrix onto stack \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a9177cebe1c9e988ca49b3163ba752ec0}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a9177cebe1c9e988ca49b3163ba752ec0}{VMultMatrix} (Math::Mat44f \&matrix)}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a9177cebe1c9e988ca49b3163ba752ec0}
+
+\begin{DoxyCompactList}\small\item\em multiply matrix \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a8cef9d28ea139fd3964e40f13be3b928}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a8cef9d28ea139fd3964e40f13be3b928}{VPopMatrix} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a8cef9d28ea139fd3964e40f13be3b928}
+
+\begin{DoxyCompactList}\small\item\em pop matrix from the stack \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a43b45dbf26affe9099e818f701e1a8cf}{
+void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a43b45dbf26affe9099e818f701e1a8cf}{VLight} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a43b45dbf26affe9099e818f701e1a8cf}
+
+\begin{DoxyCompactList}\small\item\em lights \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a801f44ff624fa20da79be8eec81fe278}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a801f44ff624fa20da79be8eec81fe278}{VInitialize} (\hyperlink{structVoid_1_1Void}{Void::Void} $\ast$data)}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a801f44ff624fa20da79be8eec81fe278}
+
+\begin{DoxyCompactList}\small\item\em initialize \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_a5dc09b9b73e52bcc6c27a7894b3b5e0e}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_a5dc09b9b73e52bcc6c27a7894b3b5e0e}{VUpdate} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_a5dc09b9b73e52bcc6c27a7894b3b5e0e}
+
+\begin{DoxyCompactList}\small\item\em update \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_ae331ca2a8458e06a4ec5b393f50a1a20}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_ae331ca2a8458e06a4ec5b393f50a1a20}{VBeginRender} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_ae331ca2a8458e06a4ec5b393f50a1a20}
+
+\begin{DoxyCompactList}\small\item\em begin rendering \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_ae2fb1b7a10990e03f03505a0204ccd1b}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_ae2fb1b7a10990e03f03505a0204ccd1b}{VEndRender} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_ae2fb1b7a10990e03f03505a0204ccd1b}
+
+\begin{DoxyCompactList}\small\item\em end rendering \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_adc42f2800dc18dcbe268328b42c8a9c1}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_adc42f2800dc18dcbe268328b42c8a9c1}{VSwap} ()}
+\label{classPlatform_1_1Renderer_1_1RendererGL_adc42f2800dc18dcbe268328b42c8a9c1}
+
+\begin{DoxyCompactList}\small\item\em swap buffers \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_acd7cc346e747ea07b065aebe99b76cb3}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_acd7cc346e747ea07b065aebe99b76cb3}{VLookAt} (Math::Vec3f eye, Math::Vec3f center, Math::Vec3f up)}
+\label{classPlatform_1_1Renderer_1_1RendererGL_acd7cc346e747ea07b065aebe99b76cb3}
+
+\begin{DoxyCompactList}\small\item\em look at \item\end{DoxyCompactList}\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_ae3d708548b2390aa953b4e9738e1e8ba}{
+virtual void \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_ae3d708548b2390aa953b4e9738e1e8ba}{VResize} (int width, int height)}
+\label{classPlatform_1_1Renderer_1_1RendererGL_ae3d708548b2390aa953b4e9738e1e8ba}
+
+\begin{DoxyCompactList}\small\item\em resize window \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPlatform_1_1Renderer_1_1RendererGL_ab78dc8ccc2d90acbc3a36feef49a523e}{
+GLint $\ast$ \hyperlink{classPlatform_1_1Renderer_1_1RendererGL_ab78dc8ccc2d90acbc3a36feef49a523e}{att}}
+\label{classPlatform_1_1Renderer_1_1RendererGL_ab78dc8ccc2d90acbc3a36feef49a523e}
+
+\begin{DoxyCompactList}\small\item\em attributes \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+OpenGL implementation. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Platform/Renderer/GL/PL\_\-RE\_\-GL\_\-Renderer.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Platform/Renderer/GL/PL\_\-RE\_\-GL\_\-Renderer.cpp\end{DoxyCompactItemize}

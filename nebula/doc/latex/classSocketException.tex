@@ -1,0 +1,54 @@
+\hypertarget{classSocketException}{
+\section{SocketException Class Reference}
+\label{classSocketException}\index{SocketException@{SocketException}}
+}
+
+
+Signals a problem with the execution of a socket call.  
+
+
+{\ttfamily \#include $<$SocketException.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSocketException_abb5bcecd9d9e20868c237ec5a82cf5c3}{SocketException} (const string \&message, bool inclSysMsg=false)  throw ()
+\item 
+\hyperlink{classSocketException_a659557c899329aea01977c980c4db9b9}{$\sim$SocketException} ()  throw ()
+\item 
+const char $\ast$ \hyperlink{classSocketException_a06b7b3f186976bb5ec7e7bf007c4f0ac}{what} () const   throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Signals a problem with the execution of a socket call. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSocketException_abb5bcecd9d9e20868c237ec5a82cf5c3}{
+\index{SocketException@{SocketException}!SocketException@{SocketException}}
+\index{SocketException@{SocketException}!SocketException@{SocketException}}
+\subsubsection[{SocketException}]{\setlength{\rightskip}{0pt plus 5cm}SocketException::SocketException (const string \& {\em message}, \/  bool {\em inclSysMsg} = {\ttfamily false})  throw ()}}
+\label{classSocketException_abb5bcecd9d9e20868c237ec5a82cf5c3}
+Construct a \hyperlink{classSocketException}{SocketException} with a explanatory message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em message}]explanatory message \item[{\em inclSysMsg}]true if system message (from strerror(errno)) should be postfixed to the user provided message \end{DoxyParams}
+\hypertarget{classSocketException_a659557c899329aea01977c980c4db9b9}{
+\index{SocketException@{SocketException}!$\sim$SocketException@{$\sim$SocketException}}
+\index{$\sim$SocketException@{$\sim$SocketException}!SocketException@{SocketException}}
+\subsubsection[{$\sim$SocketException}]{\setlength{\rightskip}{0pt plus 5cm}SocketException::$\sim$SocketException ()  throw ()}}
+\label{classSocketException_a659557c899329aea01977c980c4db9b9}
+Provided just to guarantee that no exceptions are thrown. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSocketException_a06b7b3f186976bb5ec7e7bf007c4f0ac}{
+\index{SocketException@{SocketException}!what@{what}}
+\index{what@{what}!SocketException@{SocketException}}
+\subsubsection[{what}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ SocketException::what () const  throw ()}}
+\label{classSocketException_a06b7b3f186976bb5ec7e7bf007c4f0ac}
+Get the exception message \begin{DoxyReturn}{Returns}
+exception message 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Include/Network/Berk/SocketException.h\item 
+/nfs/stak/students/r/rymalc/cfs/code/cpp/Nebula/Source/Network/Berk/SocketException.cpp\end{DoxyCompactItemize}

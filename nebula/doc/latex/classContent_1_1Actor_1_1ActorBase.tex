@@ -1,0 +1,85 @@
+\hypertarget{classContent_1_1Actor_1_1ActorBase}{
+\section{Content::Actor::ActorBase Class Reference}
+\label{classContent_1_1Actor_1_1ActorBase}\index{Content::Actor::ActorBase@{Content::Actor::ActorBase}}
+}
+
+
+Global Base Class for Actors.  
+
+
+{\ttfamily \#include $<$ActorBase.h$>$}Inheritance diagram for Content::Actor::ActorBase::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.11765cm]{classContent_1_1Actor_1_1ActorBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_a5dc48efa2df4c91455f402b959275021}{
+\hyperlink{classContent_1_1Actor_1_1ActorBase_a5dc48efa2df4c91455f402b959275021}{ActorBase} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1Actor_1_1ActorBase_a5dc48efa2df4c91455f402b959275021}
+
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_ae4a0883fb2a5988680dfea1295d50064}{
+\hyperlink{classContent_1_1Actor_1_1ActorBase_ae4a0883fb2a5988680dfea1295d50064}{$\sim$ActorBase} ()}
+\label{classContent_1_1Actor_1_1ActorBase_ae4a0883fb2a5988680dfea1295d50064}
+
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_ac405f5c4f8d4b384400333ef55c0591d}{
+virtual void \hyperlink{classContent_1_1Actor_1_1ActorBase_ac405f5c4f8d4b384400333ef55c0591d}{VRender} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1Actor_1_1ActorBase_ac405f5c4f8d4b384400333ef55c0591d}
+
+\begin{DoxyCompactList}\small\item\em render \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_a378b1517f3199ff215c62064dd69cc3e}{
+virtual void \hyperlink{classContent_1_1Actor_1_1ActorBase_a378b1517f3199ff215c62064dd69cc3e}{VStep} (double dt)}
+\label{classContent_1_1Actor_1_1ActorBase_a378b1517f3199ff215c62064dd69cc3e}
+
+\begin{DoxyCompactList}\small\item\em step \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_a55752457ae32841d53737b3eeca67680}{
+virtual void {\bfseries SetTransform} (\hyperlink{classMath_1_1Transform}{Math::Transform} \&trans)}
+\label{classContent_1_1Actor_1_1ActorBase_a55752457ae32841d53737b3eeca67680}
+
+\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_aba8630071648485d521a390b5b040f9d}{
+::\hyperlink{classContent_1_1Actor_1_1Physics_1_1ActorBase}{Content::Actor::Physics::ActorBase} $\ast$ \hyperlink{classContent_1_1Actor_1_1ActorBase_aba8630071648485d521a390b5b040f9d}{GetPhysicsActorBase} ()}
+\label{classContent_1_1Actor_1_1ActorBase_aba8630071648485d521a390b5b040f9d}
+
+\begin{DoxyCompactList}\small\item\em Physics ActorBase \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_ab94834df0237dbbb43d545f73463c2d9}{
+\hyperlink{classMath_1_1Transform}{Math::Transform} \hyperlink{classContent_1_1Actor_1_1ActorBase_ab94834df0237dbbb43d545f73463c2d9}{m\_\-transform}}
+\label{classContent_1_1Actor_1_1ActorBase_ab94834df0237dbbb43d545f73463c2d9}
+
+\begin{DoxyCompactList}\small\item\em Transform relative to Scene \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Parents}\par
+{\em \label{_amgrp9dafe3747e06aa15af0bfba521f66346}
+ App }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_ab88f658daf5ff3d2ceec5b3d0c8628a0}{
+::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$ {\bfseries m\_\-app}}
+\label{classContent_1_1Actor_1_1ActorBase_ab88f658daf5ff3d2ceec5b3d0c8628a0}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Children}\par
+{\em \label{_amgrp64e4aca4297806247f62a7b5f8cbd3df}
+ Physics for this ActorBase }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1ActorBase_a04c5fd735ef30d72d39d8411c8360b4d}{
+::\hyperlink{classContent_1_1Actor_1_1Physics_1_1ActorBase}{Content::Actor::Physics::ActorBase} $\ast$ {\bfseries m\_\-physicsActorBase}}
+\label{classContent_1_1Actor_1_1ActorBase_a04c5fd735ef30d72d39d8411c8360b4d}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Global Base Class for Actors. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Actor/Renderer/ActorBase.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Actor/ActorBase.cpp\end{DoxyCompactItemize}

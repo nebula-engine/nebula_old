@@ -1,0 +1,80 @@
+\hypertarget{classContent_1_1Actor_1_1Controller}{
+\section{Content::Actor::Controller Class Reference}
+\label{classContent_1_1Actor_1_1Controller}\index{Content::Actor::Controller@{Content::Actor::Controller}}
+}
+
+
+controller  
+
+
+{\ttfamily \#include $<$Controller.h$>$}Inheritance diagram for Content::Actor::Controller::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classContent_1_1Actor_1_1Controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a1a4b05c30e050180425f7d597ec6f3f8}{
+\hyperlink{classContent_1_1Actor_1_1Controller_a1a4b05c30e050180425f7d597ec6f3f8}{Controller} (::\hyperlink{classFramework_1_1App}{Framework::App} $\ast$app)}
+\label{classContent_1_1Actor_1_1Controller_a1a4b05c30e050180425f7d597ec6f3f8}
+
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_afbc39ea16b5a9afc23028f728f5addb2}{
+\hyperlink{classContent_1_1Actor_1_1Controller_afbc39ea16b5a9afc23028f728f5addb2}{$\sim$Controller} ()}
+\label{classContent_1_1Actor_1_1Controller_afbc39ea16b5a9afc23028f728f5addb2}
+
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_ae3be2fa04ccda4646b15f0c294572041}{
+virtual void \hyperlink{classContent_1_1Actor_1_1Controller_ae3be2fa04ccda4646b15f0c294572041}{VInitialize} ()}
+\label{classContent_1_1Actor_1_1Controller_ae3be2fa04ccda4646b15f0c294572041}
+
+\begin{DoxyCompactList}\small\item\em initialize \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a2ec0fca5a69e74223e9ed2e784335b67}{
+void \hyperlink{classContent_1_1Actor_1_1Controller_a2ec0fca5a69e74223e9ed2e784335b67}{CreateShapeBox} (\hyperlink{classContent_1_1Shape_1_1Box}{Shape::Box} $\ast$\&shape)}
+\label{classContent_1_1Actor_1_1Controller_a2ec0fca5a69e74223e9ed2e784335b67}
+
+\begin{DoxyCompactList}\small\item\em create box shape \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a2b16b053614b539bad5d180aa5d8a950}{
+void \hyperlink{classContent_1_1Actor_1_1Controller_a2b16b053614b539bad5d180aa5d8a950}{VRender} (\hyperlink{classPlatform_1_1Render}{Platform::Render} $\ast$render)}
+\label{classContent_1_1Actor_1_1Controller_a2b16b053614b539bad5d180aa5d8a950}
+
+\begin{DoxyCompactList}\small\item\em render \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a443007f9e47fd0574b4d705c2222814a}{
+void \hyperlink{classContent_1_1Actor_1_1Controller_a443007f9e47fd0574b4d705c2222814a}{VStep} (double dt)}
+\label{classContent_1_1Actor_1_1Controller_a443007f9e47fd0574b4d705c2222814a}
+
+\begin{DoxyCompactList}\small\item\em step \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_afcaebeef8ac7aee4d54304255bce7280}{
+\hyperlink{classMapPtr}{MapPtr}$<$ \hyperlink{classContent_1_1Shape_1_1Shape}{Shape::Shape} $>$ \hyperlink{classContent_1_1Actor_1_1Controller_afcaebeef8ac7aee4d54304255bce7280}{m\_\-shape}}
+\label{classContent_1_1Actor_1_1Controller_afcaebeef8ac7aee4d54304255bce7280}
+
+\begin{DoxyCompactList}\small\item\em shape \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a2c02c2c071e3cde4447155aa28ee6a17}{
+\hyperlink{classMath_1_1Vec3}{Math::Vec3f} \hyperlink{classContent_1_1Actor_1_1Controller_a2c02c2c071e3cde4447155aa28ee6a17}{m\_\-pos}}
+\label{classContent_1_1Actor_1_1Controller_a2c02c2c071e3cde4447155aa28ee6a17}
+
+\begin{DoxyCompactList}\small\item\em position \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_a5cdddcd3df0d62a9e8a99537a7c2eeab}{
+\hyperlink{classMath_1_1Vec3}{Math::Vec3f} \hyperlink{classContent_1_1Actor_1_1Controller_a5cdddcd3df0d62a9e8a99537a7c2eeab}{m\_\-look}}
+\label{classContent_1_1Actor_1_1Controller_a5cdddcd3df0d62a9e8a99537a7c2eeab}
+
+\begin{DoxyCompactList}\small\item\em look direction \item\end{DoxyCompactList}\item 
+\hypertarget{classContent_1_1Actor_1_1Controller_acccd8d2655e923b35740061da102fff7}{
+\hyperlink{classMath_1_1Vec3}{Math::Vec3f} \hyperlink{classContent_1_1Actor_1_1Controller_acccd8d2655e923b35740061da102fff7}{m\_\-up}}
+\label{classContent_1_1Actor_1_1Controller_acccd8d2655e923b35740061da102fff7}
+
+\begin{DoxyCompactList}\small\item\em up direction \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+controller 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Include/Content/Actor/Renderer/Controller.h\item 
+/nfs/stak/students/r/rymalc/cfs/personal/code/Nebula-\/1.0/Source/Content/Actor/Controller.cpp\end{DoxyCompactItemize}
