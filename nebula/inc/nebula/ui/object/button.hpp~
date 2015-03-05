@@ -1,0 +1,35 @@
+
+namespace nebula
+{
+    namespace ui
+    {
+        class button: public nebula::ui::object::base
+        {
+        public:
+            /// on_mouse_down
+            virtual void on_mouse_down();
+            /// on_mouse_up
+            virtual void on_mouse_up();
+            /// on_hover_get
+            virtual void on_hover_get();
+            /// on_hover_lose
+            virtual void on_hover_lose();
+            /// render
+            virtual void render(platform::renderer::renderer*);
+
+
+
+            /// x
+            int x_;
+            /// y
+            int y_;
+            /// w
+            int w_;
+            /// h
+            int h_;
+
+
+        };
+    }
+}
+

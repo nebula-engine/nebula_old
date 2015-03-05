@@ -1,0 +1,84 @@
+#ifndef _ACTOR_ADMIN_ACTOR_BASE_H
+#define _ACTOR_ADMIN_ACTOR_BASE_H
+
+#include <boost/numeric/ublas/matrix.hpp>
+#include <boost/numeric/ublas/io.hpp>
+
+
+
+
+
+namespace Content
+{
+	namespace Actor
+	{
+		namespace Admin
+		{
+			/// %ActorBase
+			class ActorBase
+			{
+			public:
+				///@name Ctor and Dtor
+				///@{
+				// Ctor
+								ActorBase();
+				/// Copy Ctor
+								ActorBase(const ActorBase&);
+				/// Dtor
+								~ActorBase();
+				///@}
+
+				///@name Operator
+				///@{
+				/// Assignment
+				ActorBase&		operator=(const ActorBase&);
+				///@}
+
+				///@name Standard
+				///@{
+				/// Init
+				virtual	void	VInit(Void*);
+				/// Shutdown
+				virtual	void	VShutdown(Void*);
+				/// Update
+				virtual	void	VUpdate(Void*);
+				/// Step
+				virtual	void	VStep(Void*);
+				/// Render
+				virtual	void	VRender(Void*);
+				///@}
+
+
+				/// pose
+				boost::numeric::ublas::matrix<float>	pose_;
+			};
+		}
+	}
+}
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

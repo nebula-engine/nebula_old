@@ -1,0 +1,99 @@
+#ifndef _CONTENT_CONTENT_H
+#define _CONTENT_CONTENT_H
+
+#include <memory>
+#include <map>
+
+#include <utilities/Types/Utilities.h>
+#include <core/Core.h>
+
+using namespace std;
+
+namespace Content {
+	/// content
+	class Content {
+	public:
+		/// Constructor
+									Content();
+		/// Destructor
+									~Content();
+
+
+
+		/// initialize
+		void						VInit( Void* data );
+		/// update
+		void						Update();
+		/// shutdown
+		void						ShutDown();
+
+
+		/// Create %Universe
+		void						CreateUniverse( CO_UN_AD_Universe*& universe );
+
+
+
+
+
+		/// update universe
+		void						UpdateUniverse( CO_UN_AD_Universe* universe );
+		/// shutdown universe
+		void						ShutDownUniverse( CO_UN_AD_Universe* universe );
+
+
+
+
+
+		///@name fetch objects
+		///@{
+		/// universe
+		CO_UN_AD_Universe*			GetUniverse( int a ) { return m_universe.Find(a); }
+		/// physics
+		CO_PH_Physics*				GetPhysics() 			const { return m_physics; }
+		///@}
+	protected:
+
+		/// app
+		FR_App*						m_app;
+		/// physics
+		CO_PH_Physics*				m_physics;
+		
+		///@name maps
+		///@{
+		/// universe
+		MapPtr<CO_UN_AD_Universe>	m_universe;
+		///@}
+	};
+};
+
+/*
+/// functionoid to update universes
+class Funct_Universe_Update: public Funct<CO_UN_AD_Universe,Content::Content> {
+public:
+	/// Constructor
+			Funct_Universe_Update( Content::Content* content ): Funct<CO_UN_AD_Universe,Content::Content>(content) {}
+	/// doit
+	void	doit( CO_UN_AD_Universe* universe );
+};
+// functionoid to shutdown universes
+class Funct_Universe_ShutDown: public Funct<CO_UN_AD_Universe,Content::Content> {
+public:
+	/// Constructor
+			Funct_Universe_ShutDown( Content::Content* content ): Funct<CO_UN_AD_Universe,Content::Content>(content) {}
+	/// doit
+	void	doit( CO_UN_AD_Universe* universe );
+};
+*/
+
+
+#endif
+
+
+
+
+
+
+
+
+
+

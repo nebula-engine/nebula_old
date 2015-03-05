@@ -1,0 +1,58 @@
+#ifndef _PRINT_H
+#define _PRINT_H
+
+#include <stdio.h>
+
+namespace Math {
+	template <typename T> class Vec3;
+	template <typename T> class Vec4;
+	template <typename T> class Mat33;
+	template <typename T> class Mat44;
+	typedef Vec3<float> Vec3f;
+	typedef Vec4<float>  Vec4f;
+	typedef Mat33<float>  Mat33f;
+	typedef Mat44<float>  Mat44f;
+};
+
+
+
+
+#ifdef __DEBUG
+	#ifdef __LINUX
+		#define PRINTSIG fprintf(stdout,"%s:%i: %s\n",__FILE__,__LINE__,__PRETTY_FUNCTION__)
+	#elif defined(__WINDOWS)
+		#define PRINTSIG fprintf(stdout,"%s:%i: %s\n",__FILE__,__LINE__,__FUNCSIG__)
+	#endif
+#else
+	#define PRINTSIG
+#endif
+
+
+inline void printsig() {
+#ifdef __DEBUG
+#ifdef __LINUX
+	fprintf(stdout,"%s:%i: %s\n",__FILE__,__LINE__,__PRETTY_FUNCTION__);
+#elif defined(__WINDOWS)
+	fprintf(stdout,"%s:%i: %s\n",__FILE__,__LINE__,__FUNCSIG__);
+#endif
+#endif
+}
+
+
+/// Print %Vec3f
+void	PrintVec3f( Math::Vec3f& matrix );
+/// Print %Vec4f
+void	PrintVec4f( Math::Vec4f& matrix );
+/// Print %Mat33f
+void	PrintMat33f( Math::Mat33f& matrix );
+/// Print %Mat44f
+void	PrintMat44f( Math::Mat44f& matrix );
+
+
+
+
+
+#endif
+
+
+

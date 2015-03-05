@@ -1,0 +1,161 @@
+#ifndef _TYPES_CONTENT_H
+#define _TYPES_CONTENT_H
+
+#include <utilities/Types/UT_TY_CO_Actor.h>
+
+namespace Content {
+	class Content_PP;
+	
+	class Content;
+	class Camera;
+
+	namespace Physics
+	{
+		class Physics;
+
+		namespace PhysX
+		{
+			class Physics;
+		}
+	}
+
+	namespace Shape
+	{
+		namespace Admin {
+			struct PP;
+			
+			class Shape;
+			class Box;
+			class Sphere;
+		}
+		namespace Physics
+		{
+			struct PP;
+			
+			class Shape;
+			class Box;
+			class Sphere;
+
+			namespace PhysX
+			{
+				class Shape;
+				class Box;
+				class Sphere;
+			}
+		}
+		namespace Renderer
+		{
+			class Shape;
+			class Box;
+			class Sphere;
+		}
+	}
+
+	namespace Universe
+	{
+		namespace Admin
+		{
+			class Universe;
+		}
+		namespace Renderer
+		{
+			class Universe;
+		}
+	}
+
+	namespace Scene {
+		namespace Admin {
+			class Scene_PP;
+			
+			class Scene;
+		}
+		namespace Physics
+		{
+			class Scene;
+
+			namespace PhysX
+			{
+				class Scene;
+			}
+		}
+		namespace Renderer
+		{
+			class Scene;
+		}
+	}
+
+	namespace View
+	{
+		namespace Admin
+		{
+			class View;
+
+			namespace Human
+			{
+				class View;
+			}
+		}
+		namespace Renderer
+		{
+			class View;
+		}
+	}
+
+	namespace Animation
+	{
+		class Frame;
+		class Translation;
+	}
+}
+
+
+// typedefs
+
+typedef	Content::Content									CO_Content;
+
+
+typedef	Content::Universe::Admin::Universe					CO_UN_AD_Universe;
+
+typedef	Content::Scene::Admin::Scene						CO_SC_AD_Scene;
+typedef	Content::Scene::Physics::Scene						CO_SC_PH_Scene;
+typedef	Content::Scene::Physics::PhysX::Scene				CO_SC_PH_PX_Scene;
+typedef	Content::Scene::Renderer::Scene						CO_SC_RE_Scene;
+
+
+
+typedef	Content::View::Admin::View							CO_VI_AD_View;
+typedef	Content::View::Admin::Human::View					CO_VI_AD_HU_View;
+
+
+
+typedef	Content::Physics::Physics							CO_PH_Physics;
+typedef	Content::Physics::PhysX::Physics					CO_PH_PX_Physics;
+
+
+
+typedef Content::Shape::Admin::Shape						CO_SH_AD_Shape;
+typedef Content::Shape::Admin::Box							CO_SH_AD_Box;
+typedef Content::Shape::Admin::Sphere						CO_SH_AD_Sphere;
+
+typedef Content::Shape::Physics::Shape						CO_SH_PH_Shape;
+typedef Content::Shape::Physics::Box						CO_SH_PH_Box;
+typedef Content::Shape::Physics::Sphere						CO_SH_PH_Sphere;
+
+typedef Content::Shape::Physics::PhysX::Shape				CO_SH_PH_PX_Shape;
+typedef Content::Shape::Physics::PhysX::Box					CO_SH_PH_PX_Box;
+typedef Content::Shape::Physics::PhysX::Sphere				CO_SH_PH_PX_Sphere;
+
+typedef Content::Shape::Renderer::Shape						CO_SH_RE_Shape;
+typedef Content::Shape::Renderer::Box						CO_SH_RE_Box;
+typedef Content::Shape::Renderer::Sphere					CO_SH_RE_Sphere;
+
+
+typedef Content::Animation::Frame							CO_AN_Frame;
+typedef Content::Animation::Translation						CO_AN_Translation;
+
+#endif
+
+
+
+
+

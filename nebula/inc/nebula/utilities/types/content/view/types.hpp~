@@ -1,0 +1,53 @@
+#ifndef _TYPES_CONTENT_H
+#define _TYPES_CONTENT_H
+
+#include <utilities/Types/UT_TY_CO_Actor.h>
+
+
+
+namespace nebula
+{
+	namespace content
+	{
+		namespace view
+		{
+			namespace admin
+			{
+				class base;
+
+				namespace human
+				{
+					class base;
+				}
+			}
+		
+			namespace renderer
+			{
+				class base;
+			}
+		}
+		
+		namespace Animation
+		{
+			class Frame;
+			class Translation;
+		}
+	}
+}
+
+
+
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+

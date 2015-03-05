@@ -1,0 +1,38 @@
+#include <content/scene/admin/scene.h>
+
+
+
+
+
+#include <content/universe/admin/universe.h>
+
+	nebula::content::universe::admin::universe::universe() {
+	
+}
+	nebula::content::universe::admin::universe::~universe() {
+}
+void	nebula::content::universe::admin::universe::VInit( Void* data ) {
+	m_app = DynCast<Void,AR_Init>( data )->app;
+}
+void	nebula::content::universe::admin::universe::VShutDown() {
+	m_scene.For( &CO_SC_AD_Scene::VShutDown );
+
+}
+void	nebula::content::universe::admin::universe::VUpdate() {
+	m_scene.For( &CO_SC_AD_Scene::VUpdate );
+}
+void	nebula::content::universe::admin::universe::CreateScene( CO_SC_AD_Scene*& scene ) {
+	PRINTSIG;
+
+	m_scene.Create(scene);
+
+	AR_Init i;
+	i.app = m_app;
+
+	scene->VInit( &i );
+}
+
+
+
+
+
